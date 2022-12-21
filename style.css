@@ -1,0 +1,767 @@
+/*
+Theme Name: Prezevolve
+Theme URI: https://prezevent.com/
+Author: Thomas Pericoi
+Author URI: https://thomaspericoi.com/
+Description: BAn extensive and customisable Wordpress theme built for Prezevent.
+Requires at least: 5.9
+Tested up to: 6.0.2
+Text Domain: prezevolve
+*/
+
+/* #Imports
+--------------------------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+/* #Variables
+--------------------------------------------------------------- */
+
+:root {
+  --black: #090909;
+  --white: #fffffb;
+  --primary-1: #1f274a;
+  --primary-2: #0564cc;
+  --primary-3: #6c849a;
+  --primary-4: #ff1d6e;
+  --secondary-1: #2c3a6b;
+  --secondary-2: #bdd3f9;
+  --secondary-3: #afc4d3;
+  --secondary-4: #f792bb;
+  --tertiary-1: #f2cf1d;
+  --tertiary-2: #04bf8a;
+  --tertiary-3: #edf97f;
+  --tertiary-4: #6bd1b2;
+
+  --link-water: #f1f6fc;
+
+  --bold: "Barlow", sans-serif;
+  --body: "Open Sans", sans-serif;
+
+  --spacing-section: 4rem;
+  --spacing-title: 1em;
+}
+
+/* #WordPress Core
+-------------------------------------------------------------- */
+
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption {
+  background: var(--white);
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+}
+
+/* #Reset
+--------------------------------------------------------------- */
+
+a,
+abbr,
+address,
+article,
+aside,
+audio,
+b,
+blockquote,
+body,
+button,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+label,
+legend,
+li,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  height: 100%;
+}
+
+b,
+strong {
+  font-weight: bold;
+  font-weight: 700;
+}
+
+img {
+  font-size: 0;
+  color: transparent;
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td,
+caption {
+  font-weight: inherit;
+  vertical-align: top;
+  text-align: left;
+}
+
+small {
+  font-size: 70%;
+}
+
+p:empty {
+  display: none !important;
+}
+
+button,
+input {
+  font: unset;
+  outline: 0;
+}
+
+/* #Base
+--------------------------------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--primary-4);
+}
+
+::-moz-selection {
+  background: var(--primary-4);
+}
+
+/* #Typography
+--------------------------------------------------------------- */
+
+body {
+  font-family: var(--body);
+  line-height: 1.5;
+  color: var(--primary-3);
+  background-color: var(--white);
+}
+
+body,
+p {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 767px) {
+  body,
+  p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  body,
+  p {
+    font-size: 20px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: normal;
+  font-family: var(--bold);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--primary-1);
+  -webkit-font-smoothing: antialiased;
+}
+
+h5,
+h6 {
+  line-height: 1.4;
+}
+
+h1,
+.h1-size {
+  font-size: 30px;
+}
+
+@media screen and (min-width: 767px) {
+  h1,
+  .h1-size {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  h1,
+  .h1-size {
+    font-size: 50px;
+  }
+}
+
+h2,
+.h2-size {
+  font-size: 24px;
+}
+
+@media screen and (min-width: 767px) {
+  h2,
+  .h2-size {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  h2,
+  .h2-size {
+    font-size: 38px;
+  }
+}
+
+h3,
+.h3-size {
+  font-size: 22px;
+}
+
+@media screen and (min-width: 767px) {
+  h3,
+  .h3-size {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  h3,
+  .h3-size {
+    font-size: 32px;
+  }
+}
+
+h4,
+.h4-size {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 767px) {
+  h4,
+  .h4-size {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  h4,
+  .h4-size {
+    font-size: 26px;
+  }
+}
+
+h5,
+.h5-size {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 767px) {
+  h5,
+  .h5-size {
+    font-size: 21px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  h5,
+  .h5-size {
+    font-size: 23px;
+  }
+}
+
+h6,
+.h6-size {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 767px) {
+  h6,
+  .h6-size {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  h6,
+  .h6-size {
+    font-size: 20px;
+  }
+}
+
+/* #Structure
+--------------------------------------------------------------- */
+
+/* Containers */
+.container {
+  max-width: 720px;
+  position: relative;
+  margin: 0 auto;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+/* #Elements
+--------------------------------------------------------------- */
+
+/* Buttons */
+.btn {
+  height: 40px;
+  padding: 0.3rem 1.2rem 0.35rem 1.2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: var(--bold);
+  font-weight: 500;
+  border-radius: 50px;
+  border-width: 3px;
+  border-style: solid;
+  transition: all ease 250ms;
+}
+
+.btn.btn-primary {
+  background-color: var(--primary-2);
+  border-color: var(--secondary-2);
+  color: var(--white);
+}
+
+.btn.btn-primary:hover {
+  border-color: var(--primary-2);
+}
+
+.btn.btn-primary-dark {
+  background-color: var(--primary-1);
+  border-color: var(--secondary-2);
+  color: var(--white);
+}
+
+.btn.btn-primary-dark:hover {
+  border-color: var(--primary-1);
+}
+
+.btn.btn-secondary {
+  background-color: var(--primary-4);
+  border-color: var(--secondary-4);
+  color: var(--white);
+}
+
+.btn.btn-secondary:hover {
+  border-color: var(--primary-4);
+}
+
+.btn.btn-tertiary {
+  background-color: var(--tertiary-2);
+  border-color: var(--tertiary-4);
+  color: var(--white);
+}
+
+.btn.btn-tertiary:hover {
+  border-color: var(--tertiary-2);
+}
+
+/* Pillule */
+[data-pill]:after {
+  content: attr(data-pill);
+  padding: 0.3rem 0.5rem;
+  transform: translateY(-1rem);
+  margin-left: 0.65em;
+  display: inline-block;
+  color: var(--white);
+  font-family: var(--bold);
+  font-size: 0.65rem;
+  background-color: var(--primary-4);
+  border-radius: 15px;
+}
+
+/* #Templates
+--------------------------------------------------------------- */
+
+/* Fonctionnalités */
+.single-fonctionnalite .hero {
+  padding-top: 1rem;
+  padding-bottom: var(--spacing-section);
+  background-color: var(--link-water);
+}
+
+@media screen and (min-width: 992px) {
+  .single-fonctionnalite .hero {
+    padding-top: var(--spacing-section);
+    padding-bottom: var(--spacing-section);
+  }
+}
+
+.single-fonctionnalite .hero .cols {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 992px) {
+  .single-fonctionnalite .hero .cols {
+    display: flex;
+    gap: 2em;
+    flex-direction: row;
+  }
+}
+
+.single-fonctionnalite .hero .cols > div {
+  flex: 1 1 0;
+}
+
+.single-fonctionnalite .hero .image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.single-fonctionnalite .hero .image-wrapper > * {
+  width: 100%;
+  max-width: 200px;
+}
+
+@media screen and (min-width: 992px) {
+  .single-fonctionnalite .hero .image-wrapper > * {
+    max-width: 250px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .single-fonctionnalite .hero .image-wrapper {
+    order: 2;
+  }
+}
+
+.single-fonctionnalite .hero .category {
+  color: var(--primary-4);
+  font-family: var(--bold);
+  font-weight: 600;
+}
+
+.single-fonctionnalite .hero .description {
+  margin-top: 1rem;
+}
+
+.single-fonctionnalite .hero .btn {
+  margin-top: 2rem;
+}
+
+.single-fonctionnalite h2 {
+  padding-bottom: var(--spacing-title);
+}
+
+.single-fonctionnalite .related {
+  padding-top: var(--spacing-section);
+  padding-bottom: var(--spacing-section);
+}
+
+.single-fonctionnalite .features-wrapper {
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media screen and (min-width: 992px) {
+  .single-fonctionnalite .features-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3em;
+  }
+}
+
+.single-fonctionnalite .features-wrapper .feature {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.single-fonctionnalite .features-wrapper .feature img {
+  width: 100%;
+  max-width: 100px;
+  transform: scale(1);
+  transition: transform ease 250ms;
+}
+
+@media screen and (min-width: 992px) {
+  .single-fonctionnalite .features-wrapper .feature img {
+    max-width: 125px;
+  }
+}
+
+.single-fonctionnalite .features-wrapper .feature:hover img {
+  transform: scale(1.05);
+}
+
+.single-fonctionnalite .features-wrapper .feature p {
+  margin-top: 0.5em;
+  color: var(--primary-3);
+}
+
+/* #Blocks
+--------------------------------------------------------------- */
+
+/* Testimonials */
+.testimonials {
+  margin: var(--spacing-section) auto;
+}
+
+@media screen and (min-width: 767px) {
+  .testimonials {
+    width: 75%;
+  }
+}
+
+.testimonials h3 {
+  margin-bottom: 0.5em;
+  color: var(--primary-4);
+  text-align: center;
+}
+
+.testimonials blockquote {
+  margin: 0.5em;
+  padding: 0.5em 3.2em 0.5em 3.2em;
+  position: relative;
+  color: var(--primary-1);
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 600;
+  font-family: var(--bold);
+  text-align: center;
+}
+
+.testimonials blockquote:before {
+  position: absolute;
+  font-size: 5em;
+  line-height: 1;
+  top: 0;
+  left: 0;
+  content: "\201C";
+  color: var(--primary-4) !important;
+}
+
+.testimonials blockquote:after {
+  position: absolute;
+  float: right;
+  font-size: 5em;
+  line-height: 1;
+  right: 10px;
+  bottom: -0.5em;
+  content: "\201D";
+  color: var(--primary-4) !important;
+}
+
+.testimonials .author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials .author img {
+  max-width: 85px;
+  margin-right: 1em;
+  border-radius: 1rem;
+}
+
+.testimonials .author .infos {
+  margin-left: 1em;
+}
+
+.testimonials .author .name {
+  color: var(--primary-1);
+  font-weight: 700;
+  font-family: var(--bold);
+  text-transform: uppercase;
+}
+
+.testimonials .author .position {
+  color: var(--primary-3);
+  font-style: italic;
+}

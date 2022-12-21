@@ -1,0 +1,16 @@
+{
+    "name": "acf/testimonials",
+    "title": "Témoignages",
+    "description": "Un témoignage donné par un client ou ancien client.",
+    "category": "prezevolve",
+    "icon": "megaphone",
+    "keywords": [
+        "quote",
+        "review",
+        "testimonial"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "testimonials.php"
+    }
+}
