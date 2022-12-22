@@ -1,6 +1,6 @@
 {
     "key": "group_639723991b14c",
-    "title": "BLOCK - Témoignages",
+    "title": "BLOC - Témoignages",
     "fields": [
         {
             "key": "field_63972399d008d",
@@ -144,5 +144,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1671630287
+    "modified": 1671709211
 }

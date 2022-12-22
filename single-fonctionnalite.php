@@ -20,27 +20,24 @@
 
 <?php the_content(); ?>
 
-<?php $features = get_field("feature_related_features"); ?>
-<?php if ($features) : ?>
-    <section class="container related">
-        <?php if (get_field("feature_related_title")) : ?>
-            <h2><?php echo get_field("feature_related_title"); ?></h2>
-        <?php endif; ?>
+<!-- Related - Fonctionnalités -->
+<?php if (get_field("feature_related_features")) : ?>
+    <?php get_template_part(
+        'template-parts/related',
+        'fonctionnalite',
+        array(
+            'related' => get_field("feature_related_features"),
+        )
+    ); ?>
+<?php endif; ?>
 
-        <div class="features-wrapper">
-            <?php foreach ($features as $post) :
-                setup_postdata($post); ?>
-                <a href="<?php the_permalink(); ?>" class="feature">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/<?php echo get_field('feature_icon'); ?>-alt.svg" alt="Fonctionnalités">
-                    <div>
-                        <h3 class="h4-size"><?php the_title(); ?></h3>
-                        <p><?php echo get_field('feature_introduction'); ?></p>
-                    </div>
-                </a>
-            <?php endforeach; ?>
-        </div>
-    </section>
-    <?php wp_reset_postdata(); ?>
+<!-- Outro - Boutons -->
+<?php if (get_field('outro_1_button', 'option')["content"] || get_field('outro_2_button', 'option')["content"]) : ?>
+    <?php get_template_part('template-parts/outro', 'buttons', array(
+        'title' => get_field('outro_1_title', 'option'),
+        'button_1' => get_field('outro_1_button', 'option')["content"] ? get_field('outro_1_button', 'option') : false,
+        'button_2' => get_field('outro_2_button', 'option')["content"] ? get_field('outro_2_button', 'option') : false,
+    )); ?>
 <?php endif; ?>
 
 <?php get_footer(); ?>

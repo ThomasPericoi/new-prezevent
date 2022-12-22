@@ -24,4 +24,21 @@ $(document).ready(function () {
 
   // General - Enable ASCII Printer on random
   printAsciiRandom();
+
+  // General - Change tab name on blur
+  if (!isMobile()) {
+    originalTitle = $(document).find("title").text();
+
+    $(window).focus(function () {
+      document.title = originalTitle;
+    });
+
+    $(window).blur(function () {
+      document.title = "Bye-bye !";
+
+      setTimeout(function () {
+        document.title = originalTitle;
+      }, 500);
+    });
+  }
 });
