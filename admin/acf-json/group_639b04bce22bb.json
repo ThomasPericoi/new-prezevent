@@ -302,6 +302,43 @@
             "multiple": 1,
             "allow_null": 0,
             "ui": 1
+        },
+        {
+            "key": "field_63a44a5aca829",
+            "label": "Outro",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_63a44a6bca82a",
+            "label": "Titre",
+            "name": "feature_outro_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Supplante le titre de base. Laissez vide pour afficher le titre de l'outro renseigné dans \"Options du thème\".",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -322,5 +359,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1671709283
+    "modified": 1671711465
 }

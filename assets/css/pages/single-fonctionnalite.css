@@ -1,0 +1,77 @@
+/* Single fonctionnalité */
+.single-fonctionnalite .hero {
+  padding-top: 1rem;
+  padding-bottom: var(--spacing-section);
+  background-color: var(--link-water);
+}
+
+@media screen and (min-width: 992px) {
+  .single-fonctionnalite .hero {
+    padding-top: var(--spacing-section);
+    padding-bottom: var(--spacing-section);
+  }
+}
+
+.single-fonctionnalite .hero .cols {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 992px) {
+  .single-fonctionnalite .hero .cols {
+    display: flex;
+    gap: 2em;
+    flex-direction: row;
+  }
+}
+
+.single-fonctionnalite .hero .cols > div {
+  flex: 1 1 0;
+}
+
+.single-fonctionnalite .hero .image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.single-fonctionnalite .hero .image-wrapper > * {
+  width: 100%;
+  max-width: 200px;
+}
+
+@media screen and (min-width: 992px) {
+  .single-fonctionnalite .hero .image-wrapper > * {
+    max-width: 250px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .single-fonctionnalite .hero .image-wrapper {
+    order: 2;
+  }
+}
+
+.single-fonctionnalite .hero .category {
+  color: var(--primary-4);
+  font-family: var(--bold);
+  font-weight: 600;
+}
+
+.single-fonctionnalite .hero .description {
+  margin-top: 1rem;
+}
+
+.single-fonctionnalite .hero .btn {
+  margin-top: 2rem;
+}
+
+.single-fonctionnalite h2 {
+  padding-bottom: var(--spacing-title);
+}
+
+.single-fonctionnalite .related {
+  padding-top: var(--spacing-section);
+  padding-bottom: var(--spacing-section);
+}

@@ -4,7 +4,7 @@
             <h2><?php echo get_field("feature_related_title"); ?></h2>
         <?php endif; ?>
 
-        <div class="features-wrapper">
+        <div class="features-grid">
             <?php foreach ($args['related'] as $post) :
                 setup_postdata($post); ?>
                 <a href="<?php the_permalink(); ?>" class="feature">

@@ -1,0 +1,27 @@
+:root {
+  /* Colors */
+  --black: #090909;
+  --white: #fffffb;
+  --primary-1: #1f274a;
+  --primary-2: #0564cc;
+  --primary-3: #6c849a;
+  --primary-4: #ff1d6e;
+  --secondary-1: #2c3a6b;
+  --secondary-2: #bdd3f9;
+  --secondary-3: #afc4d3;
+  --secondary-4: #f792bb;
+  --tertiary-1: #f2cf1d;
+  --tertiary-2: #04bf8a;
+  --tertiary-3: #edf97f;
+  --tertiary-4: #6bd1b2;
+
+  --link-water: #f1f6fc;
+
+  /* Fonts */
+  --bold: "Barlow", sans-serif;
+  --body: "Open Sans", sans-serif;
+
+  /* Spacings */
+  --spacing-section: 4rem;
+  --spacing-title: 1em;
+}

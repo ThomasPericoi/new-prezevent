@@ -1,0 +1,13 @@
+/* Pillule */
+[data-pill]:after {
+  content: attr(data-pill);
+  padding: 0.3rem 0.5rem;
+  transform: translateY(-1rem);
+  margin-left: 0.65em;
+  display: inline-block;
+  color: var(--white);
+  font-family: var(--bold);
+  font-size: 0.65rem;
+  background-color: var(--primary-4);
+  border-radius: 15px;
+}
