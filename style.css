@@ -35,6 +35,7 @@ Text Domain: prezevolve
 /* #Blocks
 --------------------------------------------------------------- */
 
+@import "./assets/css/blocks/highlighting.css";
 @import "./assets/css/blocks/testimonials.css";
 
 /* #Template Parts

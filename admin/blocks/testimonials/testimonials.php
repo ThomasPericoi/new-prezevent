@@ -12,12 +12,12 @@
  * @param   array $context The context provided to the block by the post or it's parent block.
  */
 
-$title = get_field('title') ?: 'Lorem Ipsum';
-$content = get_field('content') ?: 'Your testimonial here...';
+$title = get_field('title') ?: 'Ils nous adorent !';
+$content = get_field('content') ?: 'Prezevent, c\'est super. Voici pourquoi...';
 $author = get_field('author') ?: '';
 
 $classes = 'testimonials';
-if ( ! empty( $block['className'] ) ) {
+if (!empty($block['className'])) {
     $classes .= ' ' . $block['className'];
 }
 

@@ -77,7 +77,7 @@ add_action('init', 'register_lp_labels_taxonomy');
 // Register blocks
 function register_acf_blocks()
 {
-    $blocks = ["testimonials"];
+    $blocks = ["highlighting", "testimonials"];
 
     foreach ($blocks as $block) {
         register_block_type(__DIR__ . '/blocks/' . $block);
