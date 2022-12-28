@@ -23,6 +23,10 @@
   --body: "Open Sans", sans-serif;
 
   /* Spacings */
-  --spacing-section: 4rem;
+  --spacing-section-inner: 4rem;
+  --spacing-section-outer: 8rem;
   --spacing-title: 1em;
+
+  /* Others */
+  --normal-radius: 0.5rem;
 }

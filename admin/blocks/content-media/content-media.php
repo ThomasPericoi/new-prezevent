@@ -1,0 +1,60 @@
+<?php
+
+/**
+ * Content + Media Block Template.
+ *
+ * @param   array $block The block settings and attributes.
+ * @param   string $content The block inner HTML (empty).
+ * @param   bool $is_preview True during backend preview render.
+ * @param   int $post_id The post ID the block is rendering content against.
+ *          This is either the post ID currently being displayed inside a query loop,
+ *          or the post ID of the post hosting this block.
+ * @param   array $context The context provided to the block by the post or it's parent block.
+ */
+
+// Style
+$block_style = get_field("style");
+$placement = ($block_style["placement"] == "left") ? "flex-alternate" : "";
+$number = $block_style["number"];
+$shadowed = $block_style["image_shadowed"] ? "shadowed" : "";
+// Content
+$content = get_field("content");
+$title = $content["title"];
+$text = $content["text"];
+// Media
+$media = get_field("media");
+$type = $media["type"];
+$image = $media["image"];
+$video = $media["video"];
+
+$classes = 'content-media ' . $placement;
+if (!empty($block['className'])) {
+    $classes .= ' ' . $block['className'];
+}
+
+$styles = array("");
+$style  = implode('; ', $styles);
+
+?>
+<?php if ($content && ($image || $video)) : ?>
+    <!-- Block - Content + Media -->
+    <section class="container <?php echo esc_attr($classes); ?>" style="<?php echo esc_attr($style); ?>">
+        <div class="content">
+            <?php if ($title) : ?>
+                <h2><?php if ($number) : ?><span class="title-number"><?php echo $number; ?>.</span> <?php endif; ?><?php echo $title; ?></h2>
+            <?php endif; ?>
+            <div class="text formatted">
+                <?php echo $text; ?>
+            </div>
+        </div>
+        <div class="media <?php echo $type; ?> <?php echo $shadowed; ?>">
+            <?php if ($type == "image") : ?>
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+            <?php else : ?>
+                <video loop autoplay muted playsinline>
+                    <source src="<?php echo $video["url"]; ?>" type="video/mp4">
+                </video>
+            <?php endif; ?>
+        </div>
+    </section>
+<?php endif; ?>

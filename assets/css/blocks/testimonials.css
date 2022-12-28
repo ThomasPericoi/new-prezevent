@@ -1,6 +1,6 @@
 /* Testimonials */
 .testimonials {
-  margin: var(--spacing-section) auto;
+  margin: var(--spacing-section-outer) auto;
 }
 
 @media screen and (min-width: 767px) {
@@ -75,7 +75,7 @@
 .testimonials .author img {
   max-width: 85px;
   margin-right: 1em;
-  border-radius: 1rem;
+  border-radius: var(--normal-radius);
 }
 
 .testimonials .author .infos {

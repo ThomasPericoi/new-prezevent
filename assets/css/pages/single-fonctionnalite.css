@@ -1,14 +1,14 @@
 /* Single fonctionnalité */
 .single-fonctionnalite .hero {
   padding-top: 1rem;
-  padding-bottom: var(--spacing-section);
+  padding-bottom: var(--spacing-section-inner);
   background-color: var(--link-water);
 }
 
 @media screen and (min-width: 992px) {
   .single-fonctionnalite .hero {
-    padding-top: var(--spacing-section);
-    padding-bottom: var(--spacing-section);
+    padding-top: var(--spacing-section-inner);
+    padding-bottom: var(--spacing-section-inner);
   }
 }
 
@@ -72,6 +72,6 @@
 }
 
 .single-fonctionnalite .related {
-  padding-top: var(--spacing-section);
-  padding-bottom: var(--spacing-section);
+  margin-top: var(--spacing-section-outer);
+  margin-bottom: var(--spacing-section-outer);
 }

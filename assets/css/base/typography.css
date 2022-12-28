@@ -25,6 +25,16 @@ p {
   }
 }
 
+strong,
+b {
+  font-weight: bold;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
 h1,
 h2,
 h3,
@@ -156,4 +166,13 @@ h6,
   .h6-size {
     font-size: 20px;
   }
+}
+
+.title-number {
+  margin-right: 3px;
+  font-weight: 700;
+  font-family: var(--bold);
+  line-height: 0;
+  font-size: 2em;
+  color: var(--secondary-2);
 }

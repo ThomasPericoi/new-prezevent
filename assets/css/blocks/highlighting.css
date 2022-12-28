@@ -1,20 +1,23 @@
 /* Highlighting */
 .highlighting {
+  margin: var(--spacing-section-outer) auto;
+}
+
+.highlighting .inner {
   padding: 4rem 3rem 3rem 3rem;
-  margin: var(--spacing-section) auto;
   position: relative;
   text-align: center;
   background: var(--lavender-blush);
-  border-radius: 1rem;
+  border-radius: var(--normal-radius);
 }
 
 @media screen and (min-width: 768px) {
-  .highlighting {
-    padding: 6rem 5rem 5rem 5rem;
+  .highlighting .inner {
+    padding: 5.5rem 5rem 5rem 5rem;
   }
 }
 
-.highlighting:before {
+.highlighting .inner:before {
   content: attr(data-tab);
   border-radius: 0 1rem 1rem 0;
   padding: 5px 30px;
@@ -28,9 +31,9 @@
 }
 
 @media screen and (min-width: 768px) {
-  .highlighting:before {
+  .highlighting .inner:before {
     top: 2rem;
-    font-size: 1em;
+    font-size: 0.9em;
   }
 }
 

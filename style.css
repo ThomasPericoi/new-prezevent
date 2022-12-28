@@ -24,6 +24,7 @@ Text Domain: prezevolve
 
 @import "./assets/css/base/base.css";
 @import "./assets/css/base/typography.css";
+@import "./assets/css/base/content.css";
 
 /* #Elements
 --------------------------------------------------------------- */
@@ -35,7 +36,9 @@ Text Domain: prezevolve
 /* #Blocks
 --------------------------------------------------------------- */
 
+@import "./assets/css/blocks/content-media.css";
 @import "./assets/css/blocks/highlighting.css";
+@import "./assets/css/blocks/perks.css";
 @import "./assets/css/blocks/testimonials.css";
 
 /* #Template Parts

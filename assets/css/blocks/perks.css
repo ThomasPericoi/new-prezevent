@@ -1,0 +1,22 @@
+/* Perks */
+.perks {
+  margin: var(--spacing-section-outer) auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 3em;
+}
+
+@media screen and (min-width: 767px) {
+  .perks {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.perk .title {
+  display: block;
+  margin-bottom: 0.35em;
+  font-family: var(--bold);
+  font-size: 1.2em;
+  font-weight: 600;
+  color: var(--primary-1);
+}

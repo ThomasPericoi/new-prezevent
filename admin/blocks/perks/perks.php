@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Highlighting Block Template.
+ * Perks Block Template.
  *
  * @param   array $block The block settings and attributes.
  * @param   string $content The block inner HTML (empty).
@@ -12,10 +12,7 @@
  * @param   array $context The context provided to the block by the post or it's parent block.
  */
 
-$content = get_field('content') ?: 'Il faut vraiment que vous portiez votre attention ici !';
-$tab = get_field('tab') ?: 'En bref';
-
-$classes = 'highlighting';
+$classes = 'perks';
 if (!empty($block['className'])) {
     $classes .= ' ' . $block['className'];
 }
@@ -24,9 +21,16 @@ $styles = array("");
 $style  = implode('; ', $styles);
 
 ?>
-<!-- Block - Highlighting -->
-<section class="container <?php echo esc_attr($classes); ?>" style="<?php echo esc_attr($style); ?>">
-    <div class="inner" data-tab="<?php echo $tab; ?>">
-        <h3><?php echo $content; ?></h3>
-    </div>
-</section>
+<?php if (have_rows('perk')) : ?>
+    <!-- Block - Perks -->
+    <section class="container <?php echo esc_attr($classes); ?>" style="<?php echo esc_attr($style); ?>">
+        <?php while (have_rows('perk')) : the_row();
+            $title = get_sub_field('title');
+            $text = get_sub_field('text'); ?>
+            <div class="perk">
+                <span class="title"><?php echo $title; ?></span>
+                <p><?php echo $text; ?></p>
+            </div>
+        <?php endwhile; ?>
+    </section>
+<?php endif; ?>

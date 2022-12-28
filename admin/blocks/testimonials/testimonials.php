@@ -25,7 +25,8 @@ $styles = array("");
 $style  = implode('; ', $styles);
 
 ?>
-<div class="<?php echo esc_attr($classes); ?>" style="<?php echo esc_attr($style); ?>">
+<!-- Block - Testimonials -->
+<section class="container <?php echo esc_attr($classes); ?>" style="<?php echo esc_attr($style); ?>">
     <h3 class="h4-size"><?php echo $title; ?></h3>
     <blockquote><?php echo $content; ?></blockquote>
     <div class="author">
@@ -35,4 +36,4 @@ $style  = implode('; ', $styles);
             <p class="position"><?php echo $author['position']; ?></p>
         </div>
     </div>
-</div>
+</section>

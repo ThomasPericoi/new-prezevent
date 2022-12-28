@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+<!-- Hero -->
 <section class="hero">
     <div class="container cols">
         <div class="image-wrapper">
