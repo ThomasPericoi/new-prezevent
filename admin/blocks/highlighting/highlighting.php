@@ -25,7 +25,7 @@ $style  = implode('; ', $styles);
 
 ?>
 <!-- Block - Highlighting -->
-<section class="container <?php echo esc_attr($classes); ?>" style="<?php echo esc_attr($style); ?>">
+<section class="container <?php echo esc_attr($classes); ?>" <?php if ($style) : ?>style="<?php echo esc_attr($style); ?>" <?php endif; ?>>
     <div class="inner" data-tab="<?php echo $tab; ?>">
         <h3><?php echo $content; ?></h3>
     </div>

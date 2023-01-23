@@ -26,7 +26,7 @@ $style  = implode('; ', $styles);
 
 ?>
 <!-- Block - Testimonials -->
-<section class="container <?php echo esc_attr($classes); ?>" style="<?php echo esc_attr($style); ?>">
+<section class="container <?php echo esc_attr($classes); ?>" <?php if ($style) : ?>style="<?php echo esc_attr($style); ?>" <?php endif; ?>>
     <h3 class="h4-size"><?php echo $title; ?></h3>
     <blockquote><?php echo $content; ?></blockquote>
     <div class="author">

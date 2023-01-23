@@ -25,29 +25,35 @@
   }
 }
 
-.content-media > div {
+.content-media>div {
   flex: 1 1 0;
 }
 
 @media screen and (min-width: 768px) {
-  .content-media > .media.video {
+  .content-media>div {
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content-media>.media.video {
     overflow: hidden;
   }
 }
 
-.content-media .media > * {
+.content-media .media>* {
   width: 100%;
 }
 
-.content-media .media.shadowed > * {
+.content-media .media.shadowed>* {
   box-shadow: 5px 5px 25px -5px rgb(0 0 0 / 15%);
 }
 
-.content-media .media > img {
+.content-media .media>img {
   border-radius: var(--normal-radius);
 }
 
-.content-media .media > video {
+.content-media .media>video {
   width: 101%;
   margin: -1px;
 }

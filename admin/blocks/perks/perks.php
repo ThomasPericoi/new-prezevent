@@ -23,7 +23,7 @@ $style  = implode('; ', $styles);
 ?>
 <?php if (have_rows('perk')) : ?>
     <!-- Block - Perks -->
-    <section class="container <?php echo esc_attr($classes); ?>" style="<?php echo esc_attr($style); ?>">
+    <section class="container <?php echo esc_attr($classes); ?>" <?php if ($style) : ?>style="<?php echo esc_attr($style); ?>" <?php endif; ?>>
         <?php while (have_rows('perk')) : the_row();
             $title = get_sub_field('title');
             $text = get_sub_field('text'); ?>
