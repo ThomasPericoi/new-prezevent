@@ -21,7 +21,7 @@
     <?php if (has_post_thumbnail()) : ?>
       <div class="featured-image">
         <?php the_post_thumbnail(); ?>
-        <?php if ("post_thumbnail_credit") : ?>
+        <?php if (get_field("post_thumbnail_credit")) : ?>
           <span class="credit">Crédit : <?php echo get_field("post_thumbnail_credit"); ?></span>
         <?php endif; ?>
       </div>

@@ -24,7 +24,6 @@
 .single-post .hero .tags {
   text-transform: uppercase;
   font-family: var(--bold);
-  font-size: 0.8em;
 }
 
 .single-post .hero .tag {
