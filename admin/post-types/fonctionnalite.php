@@ -1,16 +1,16 @@
 <?php
 $labels = [
-    'name' => 'Fonctionnalités',
-    'singular_name' => 'Fonctionnalité',
-    'add_new' => 'Ajouter',
-    'add_new_item' => 'Ajouter une fonctionnalité',
-    'edit_item' => 'Éditer la fonctionnalité',
-    'new_item' => 'Nouvelle fonctionnalité',
-    'view_item' => 'Afficher la page fonctionnalité',
-    'search_items' => 'Rechercher une fonctionnalité',
-    'not_found' =>  'Aucune fonctionnalité.',
-    'all_items' => 'Toutes les fonctionnalités',
-    'not_found_in_trash' => 'Aucune fonctionnalité trouvée dans la corbeille.',
+    'name' => __('Fonctionnalités', 'prezevolve'),
+    'singular_name' => __('Fonctionnalité', 'prezevolve'),
+    'add_new' => __('Ajouter', 'prezevolve'),
+    'add_new_item' => __('Ajouter une fonctionnalité', 'prezevolve'),
+    'edit_item' => __('Éditer une fonctionnalité', 'prezevolve'),
+    'new_item' => __('Nouvelle fonctionnalité', 'prezevolve'),
+    'view_item' => __('Afficher la fonctionnalité', 'prezevolve'),
+    'search_items' => __('Rechercher une fonctionnalité', 'prezevolve'),
+    'not_found' =>  __('Aucune fonctionnalité trouvée.', 'prezevolve'),
+    'all_items' => __('Toutes les fonctionnalités', 'prezevolve'),
+    'not_found_in_trash' => __('Aucune fonctionnalité trouvée dans la corbeille.', 'prezevolve'),
     'parent_item_colon' => ''
 ];
 

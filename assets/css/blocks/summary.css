@@ -1,0 +1,37 @@
+/* Summary */
+.summary {
+  padding: 2rem;
+  background-color: var(--link-water);
+  border-radius: var(--normal-radius);
+}
+
+@media screen and (min-width: 992px) {
+  .summary {
+    padding: 3rem;
+  }
+}
+
+.summary .title {
+  font-family: var(--bold);
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  color: var(--primary-1);
+  font-weight: 700;
+}
+
+.summary ol {
+  padding-inline-start: 1em;
+  list-style: auto;
+  color: var(--primary-1);
+  font-weight: 700;
+}
+
+.summary ol li {
+  padding-bottom: 0.5em;
+}
+
+.summary ol a {
+  color: var(--primary-3);
+  font-weight: 400;
+  text-decoration: none;
+}

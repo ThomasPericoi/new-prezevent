@@ -281,6 +281,26 @@
             "append": ""
         },
         {
+            "key": "field_63cfa2f70f7cb",
+            "label": "Titre de la section",
+            "name": "post_related_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Découvrez nos autres fonctionnalités",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_639b04bd658a8",
             "label": "Fonctionnalité(s) mise(s) en avant",
             "name": "feature_related_features",
@@ -359,5 +379,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1671711465
+    "modified": 1674552074
 }

@@ -1,0 +1,15 @@
+{
+    "name": "acf/summary",
+    "title": "Sommaire",
+    "description": "Un sommaire tout ce qu'il y a de plus classique.",
+    "category": "prezevolve",
+    "icon": "editor-ul",
+    "keywords": [
+        "content",
+        "list"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "summary.php"
+    }
+}

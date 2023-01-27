@@ -1,16 +1,16 @@
 <?php
 $labels = [
-    'name' => 'Cas client',
-    'singular_name' => 'Cas client',
-    'add_new' => 'Ajouter',
-    'add_new_item' => 'Ajouter un cas client',
-    'edit_item' => 'Éditer le cas client',
-    'new_item' => 'Nouveau cas client',
-    'view_item' => 'Afficher le cas client',
-    'search_items' => 'Rechercher un cas client',
-    'not_found' =>  'Aucun cas client trouvé.',
-    'all_items' => 'Tous les cas client',
-    'not_found_in_trash' => 'Aucun cas client trouvé dans la corbeille.',
+    'name' => __('Cas client', 'prezevolve'),
+    'singular_name' => __('Cas client', 'prezevolve'),
+    'add_new' => __('Ajouter', 'prezevolve'),
+    'add_new_item' => __('Ajouter un cas client', 'prezevolve'),
+    'edit_item' => __('Éditer un cas client', 'prezevolve'),
+    'new_item' => __('Nouveau cas client', 'prezevolve'),
+    'view_item' => __('Afficher le cas client', 'prezevolve'),
+    'search_items' => __('Rechercher un cas client', 'prezevolve'),
+    'not_found' =>  __('Aucun cas client trouvé.', 'prezevolve'),
+    'all_items' => __('Tous les cas client', 'prezevolve'),
+    'not_found_in_trash' => __('Aucun cas client trouvé dans la corbeille.', 'prezevolve'),
     'parent_item_colon' => ''
 ];
 

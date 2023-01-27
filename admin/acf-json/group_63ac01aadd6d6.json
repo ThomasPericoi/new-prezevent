@@ -257,7 +257,7 @@
                     "name": "maximum_size",
                     "aria-label": "",
                     "type": "number",
-                    "instructions": "",
+                    "instructions": "La valeur renseignée est en pixels (px).",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -294,5 +294,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1674466325
+    "modified": 1674467816
 }

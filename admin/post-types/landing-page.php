@@ -1,16 +1,16 @@
 <?php
 $labels = [
-    'name' => 'Landing pages',
-    'singular_name' => 'Landing page',
-    'add_new' => 'Ajouter',
-    'add_new_item' => 'Ajouter une landing page',
-    'edit_item' => 'Éditer la landing page',
-    'new_item' => 'Nouvelle landing page',
-    'view_item' => 'Afficher la landing page',
-    'search_items' => 'Rechercher une landing page',
-    'not_found' =>  'Aucune landing page.',
-    'all_items' => 'Toutes les landing pages',
-    'not_found_in_trash' => 'Aucune landing page trouvée dans la corbeille.',
+    'name' => __('Landing pages', 'prezevolve'),
+    'singular_name' => __('Landing page', 'prezevolve'),
+    'add_new' => __('Ajouter', 'prezevolve'),
+    'add_new_item' => __('Ajouter une landing page', 'prezevolve'),
+    'edit_item' => __('Éditer une landing page', 'prezevolve'),
+    'new_item' => __('Nouvelle landing page', 'prezevolve'),
+    'view_item' => __('Afficher la landing page', 'prezevolve'),
+    'search_items' => __('Rechercher une landing page', 'prezevolve'),
+    'not_found' =>  __('Aucune landing page trouvée.', 'prezevolve'),
+    'all_items' => __('Toutes les landing page', 'prezevolve'),
+    'not_found_in_trash' => __('Aucune landing page trouvée dans la corbeille.', 'prezevolve'),
     'parent_item_colon' => ''
 ];
 

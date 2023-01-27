@@ -1,9 +1,6 @@
 <section class="related">
     <div class="container">
-        <?php if (get_field("feature_related_title")) : ?>
-            <h2><?php echo get_field("feature_related_title"); ?></h2>
-        <?php endif; ?>
-
+        <h2><?php echo $args['title']; ?></h2>
         <div class="features-grid">
             <?php foreach ($args['related'] as $post) :
                 setup_postdata($post); ?>

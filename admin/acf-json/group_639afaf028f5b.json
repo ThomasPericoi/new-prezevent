@@ -77,6 +77,26 @@
             "endpoint": 0
         },
         {
+            "key": "field_63cfa2f70f7cb",
+            "label": "Titre de la section",
+            "name": "post_related_features_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Découvrez nos fonctionnalités",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_639afaf07b4d2",
             "label": "Fonctionnalité(s) mise(s) en avant",
             "name": "post_related_features",
@@ -100,9 +120,29 @@
             "ui": 1
         },
         {
+            "key": "field_63cfa3bf74d28",
+            "label": "Titre de la section",
+            "name": "post_related_posts_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Plus de détails sur ce thème",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_639afe756bf07",
-            "label": "Cas client mis en avant",
-            "name": "post_related_case_studies",
+            "label": "Dossiers mis en avant",
+            "name": "post_related_posts",
             "aria-label": "",
             "type": "post_object",
             "instructions": "Sélectionnez les cas client en rapport avec le contenu de ce dossier.",
@@ -114,13 +154,50 @@
                 "id": ""
             },
             "post_type": [
-                "case-client"
+                "post"
             ],
             "taxonomy": "",
             "return_format": "object",
             "multiple": 1,
             "allow_null": 0,
             "ui": 1
+        },
+        {
+            "key": "field_63cfa14e75f51",
+            "label": "Outro",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_63cfa15575f52",
+            "label": "Titre",
+            "name": "post_outro_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Supplante le titre de base. Laissez vide pour afficher le titre de l'outro renseigné dans \"Options du thème\".",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -141,5 +218,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1671709294
+    "modified": 1674749041
 }

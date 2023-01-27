@@ -1,16 +1,17 @@
 /* Content */
-.formatted > *:not(:nth-last-child(1)) {
-  margin-bottom: 1em;
+.formatted>*:not(:nth-last-child(1)) {
+  margin-top: 0;
+  margin-bottom: 3rem;
 }
 
-.formatted > ul li {
+.formatted>ul li {
   padding-left: 30px;
   margin-bottom: 0.65em;
   position: relative;
   text-indent: 0;
 }
 
-.formatted > ul li:before {
+.formatted>ul li:before {
   content: "";
   display: block;
   position: absolute;

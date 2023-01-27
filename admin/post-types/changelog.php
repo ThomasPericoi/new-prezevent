@@ -1,16 +1,16 @@
 <?php
 $labels = [
-    'name' => 'Changelogs',
-    'singular_name' => 'Changelog',
-    'add_new' => 'Ajouter',
-    'add_new_item' => 'Ajouter un changelog',
-    'edit_item' => 'Éditer le changelog',
-    'new_item' => 'Nouveau changelog',
-    'view_item' => 'Afficher le changelog',
-    'search_items' => 'Rechercher un changelog',
-    'not_found' =>  'Aucun changelog trouvé.',
-    'not_found_in_trash' => 'Aucun changelog trouvé dans la corbeille.',
-    'all_items' => 'Tous les changelogs',
+    'name' => __('Changelogs', 'prezevolve'),
+    'singular_name' => __('Changelog', 'prezevolve'),
+    'add_new' => __('Ajouter', 'prezevolve'),
+    'add_new_item' => __('Ajouter un changelog', 'prezevolve'),
+    'edit_item' => __('Éditer un changelog', 'prezevolve'),
+    'new_item' => __('Nouveau changelog', 'prezevolve'),
+    'view_item' => __('Afficher le changelog', 'prezevolve'),
+    'search_items' => __('Rechercher un changelog', 'prezevolve'),
+    'not_found' =>  __('Aucun changelog trouvé.', 'prezevolve'),
+    'all_items' => __('Tous les changelogs', 'prezevolve'),
+    'not_found_in_trash' => __('Aucun changelog trouvé dans la corbeille.', 'prezevolve'),
     'parent_item_colon' => ''
 ];
 

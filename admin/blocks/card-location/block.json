@@ -1,0 +1,14 @@
+{
+    "name": "acf/card-location",
+    "title": "Informations de lieu",
+    "description": "Ajoute une \"card\" contenant les informations liées aux lieux.",
+    "category": "prezevolve",
+    "icon": "food",
+    "keywords": [
+        "location"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "card-location.php"
+    }
+}
