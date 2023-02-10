@@ -1,0 +1,33 @@
+/* Front-page */
+.home .hero {
+  padding-top: calc(var(--spacing-section-inner)*2);
+  padding-bottom: calc(var(--spacing-section-inner)*2);
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary-1) 20%, var(--primary-4) 100%);
+  background-size: 150% 100%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+
+  0%,
+  100% {
+    background-position-x: 20%;
+  }
+
+  50% {
+    background-position-x: 100%;
+  }
+}
+
+.home .hero .title {
+  color: var(--white);
+}
+
+.home .hero .description {
+  margin-top: 0.35em;
+}
+
+.home .hero .btn-wrapper {
+  margin-top: 2em;
+}

@@ -35,11 +35,11 @@
 <?php endif; ?>
 
 <!-- Outro - Boutons -->
-<?php if (get_field('outro_1_button', 'option')["content"] || get_field('outro_2_button', 'option')["content"]) : ?>
+<?php if (get_field('outro_1_button_1', 'option')["content"] || get_field('outro_1_button_2', 'option')["content"]) : ?>
     <?php get_template_part('template-parts/outro', 'buttons', array(
         'title' => get_field("feature_outro_title") ?: get_field('outro_1_title', 'option'),
-        'button_1' => get_field('outro_1_button', 'option')["content"] ? get_field('outro_1_button', 'option') : false,
-        'button_2' => get_field('outro_2_button', 'option')["content"] ? get_field('outro_2_button', 'option') : false,
+        'button_1' => get_field('outro_1_button_1', 'option')["content"] ? get_field('outro_1_button_1', 'option') : false,
+        'button_2' => get_field('outro_1_button_2', 'option')["content"] ? get_field('outro_1_button_2', 'option') : false,
     )); ?>
 <?php endif; ?>
 

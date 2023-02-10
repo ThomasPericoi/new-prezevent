@@ -2,6 +2,7 @@
 .error404 .hero {
   padding-top: 1rem;
   padding-bottom: var(--spacing-section-inner);
+  text-align: center;
   background-color: var(--link-water);
 }
 
@@ -10,10 +11,6 @@
     padding-top: var(--spacing-section-inner);
     padding-bottom: var(--spacing-section-inner);
   }
-}
-
-.error404 .hero .container {
-  text-align: center;
 }
 
 .error404 .hero .category {

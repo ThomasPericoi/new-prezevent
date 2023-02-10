@@ -33,7 +33,6 @@ $args = [
         'page-attributes'
     ],
     'taxonomies' => [],
-    'has_archive' => false,
     'rewrite' => ['slug' => 'changelog', 'with_front' => true],
     'menu_position' => 6,
     'menu_icon' => 'dashicons-hammer',
