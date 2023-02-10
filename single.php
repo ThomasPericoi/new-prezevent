@@ -16,7 +16,7 @@
 
     <h1 class="title"><?php echo get_the_title(); ?></h1>
 
-    <p class="description"><?php echo get_field("post_introduction_text"); ?></p>
+    <?php echo get_field("post_introduction_text"); ?>
 
     <?php if (has_post_thumbnail()) : ?>
       <div class="featured-image">

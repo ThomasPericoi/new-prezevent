@@ -6,14 +6,14 @@
 // Add options page
 if (function_exists('acf_add_options_page')) {
     acf_add_options_page(array(
-        'page_title'    => 'Options du thème',
-        'menu_title'    => 'Options du thème',
+        'page_title'    => __('Options du thème', 'prezevolve'),
+        'menu_title'    => __('Options du thème', 'prezevolve'),
         'menu_slug'     => 'options',
         'capability'    => 'edit_pages',
         'redirect'      => true,
         'position'      => 2,
-        'update_button' => 'Mettre à jour',
-        'updated_message' => 'Les modifications ont été prises en compte',
+        'update_button' => __('Mettre à jour.', 'prezevolve'),
+        'updated_message' => __('Les modifications ont été prises en compte', 'prezevolve'),
         'icon_url'      => 'dashicons-info'
     ));
 }
@@ -37,19 +37,19 @@ function change_post_labels()
 {
     $get_post_type = get_post_type_object('post');
     $labels = $get_post_type->labels;
-    $labels->name = 'Dossiers';
-    $labels->singular_name = 'Dossier';
-    $labels->add_new = 'Ajouter';
-    $labels->add_new_item = 'Ajouter un dossier';
-    $labels->edit_item = 'Éditer le dossier';
-    $labels->new_item = 'Nouveau dossier';
-    $labels->view_item = 'Afficher le dossier';
-    $labels->search_items = 'Search News';
-    $labels->not_found = 'Aucun dossier trouvé.';
-    $labels->not_found_in_trash = 'Aucun dossier trouvé dans la corbeille.';
-    $labels->all_items = 'Tous les dossiers';
-    $labels->menu_name = 'Dossiers';
-    $labels->name_admin_bar = 'Dossiers';
+    $labels->name = __('Dossiers', 'prezevolve');
+    $labels->singular_name = __('Dossier', 'prezevolve');
+    $labels->add_new = __('Ajouter', 'prezevolve');
+    $labels->add_new_item = __('Ajouter un dossier', 'prezevolve');
+    $labels->edit_item = __('Éditer le dossier', 'prezevolve');
+    $labels->new_item = __('Nouveau dossier', 'prezevolve');
+    $labels->view_item = __('Afficher le dossier', 'prezevolve');
+    $labels->search_items = __('Chercher un dossier', 'prezevolve');
+    $labels->not_found = __('Aucun dossier trouvé.', 'prezevolve');
+    $labels->not_found_in_trash = __('Aucun dossier trouvé dans la corbeille.', 'prezevolve');
+    $labels->all_items = __('Tous les dossiers', 'prezevolve');
+    $labels->menu_name = __('Dossiers', 'prezevolve');
+    $labels->name_admin_bar = __('Dossiers', 'prezevolve');
 }
 add_action('init', 'change_post_labels');
 
@@ -60,7 +60,7 @@ function register_lp_labels_taxonomy()
         'lp-labels',
         array('landing-page'),
         array(
-            'label' => 'Labels',
+            'label' => __('Labels', 'prezevolve'),
             'public' => false,
             'show_ui' => true,
             'show_in_menu' => true,
