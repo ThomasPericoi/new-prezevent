@@ -55,5 +55,6 @@ Text Domain: prezevolve
 /* #Pages
 --------------------------------------------------------------- */
 
+@import "./assets/css/pages/404.css";
 @import "./assets/css/pages/single.css";
 @import "./assets/css/pages/single-fonctionnalite.css";
