@@ -1,0 +1,30 @@
+/* Archive changelog */
+.post-type-archive-changelog .changelogs-grid li {
+    padding-left: 30px;
+    margin-bottom: 0.65em;
+    position: relative;
+    text-indent: 0;
+}
+
+.post-type-archive-changelog .changelogs-grid li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1em;
+    left: 5px;
+    border: 5px solid var(--secondary-2);
+    border-radius: 50%;
+    transform: translateY(-80%);
+}
+
+.post-type-archive-changelog .changelogs-grid a {
+    text-decoration: none;
+}
+
+.post-type-archive-changelog .changelogs-grid .date {
+    font-style: italic;
+}
+
+.post-type-archive-changelog .changelogs-grid h3 {
+    font-family: monospace;
+}

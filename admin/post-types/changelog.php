@@ -27,10 +27,10 @@ $args = [
     'supports' => [
         'title',
         'editor',
-        'excerpt',
         'custom-fields',
     ],
     'taxonomies' => [],
+    'has_archive' => true,
     'rewrite' => ['slug' => 'changelog', 'with_front' => true],
     'menu_position' => 6,
     'menu_icon' => 'dashicons-hammer',

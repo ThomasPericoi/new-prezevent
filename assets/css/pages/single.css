@@ -59,3 +59,7 @@
   margin-top: var(--spacing-section-outer);
   margin-bottom: var(--spacing-section-outer);
 }
+
+.single-post .related .post .thumbnail {
+  display: none;
+}

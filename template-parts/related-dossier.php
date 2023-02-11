@@ -6,7 +6,7 @@
                 setup_postdata($post); ?>
                 <a href="<?php the_permalink(); ?>" class="post">
                     <?php if (has_post_thumbnail()) : ?>
-                        <!-- <div class="thumbnail"></div> -->
+                        <div class="thumbnail" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');"></div>
                     <?php endif; ?>
                     <div class="content">
                         <h3 class="h5-size"><?php the_title(); ?></h3>
