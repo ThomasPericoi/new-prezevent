@@ -54,11 +54,17 @@ Text Domain: prezevolve
 /* #Templates
 --------------------------------------------------------------- */
 
+@import "./assets/css/templates/simple-page.css";
+
 /* #Pages
 --------------------------------------------------------------- */
 
 @import "./assets/css/pages/404.css";
 @import "./assets/css/pages/front-page.css";
 @import "./assets/css/pages/index.css";
+@import "./assets/css/pages/page.css";
 @import "./assets/css/pages/single.css";
+@import "./assets/css/pages/single-cas-client.css";
+@import "./assets/css/pages/single-changelog.css";
 @import "./assets/css/pages/single-fonctionnalite.css";
+@import "./assets/css/pages/single-landing-page.css";

@@ -13,7 +13,6 @@
 <!-- Related - Dossiers -->
 <?php $related = get_posts(array(
   'numberposts' => 3,
-  'post__not_in' => array($post->ID)
 ));
 if ($related) : ?>
 <?php get_template_part(

@@ -39,4 +39,4 @@ $args = [
     'menu_icon' => 'dashicons-awards',
 ];
 
-register_post_type('case-client', $args);
+register_post_type('cas-client', $args);

@@ -27,10 +27,8 @@ $args = [
     'supports' => [
         'title',
         'editor',
-        'thumbnail',
         'excerpt',
         'custom-fields',
-        'page-attributes'
     ],
     'taxonomies' => [],
     'rewrite' => ['slug' => 'changelog', 'with_front' => true],
