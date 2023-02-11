@@ -1,16 +1,9 @@
 /* 404 */
 .error404 .hero {
-  padding-top: 1rem;
+  padding-top: var(--spacing-section-inner);
   padding-bottom: var(--spacing-section-inner);
   text-align: center;
   background-color: var(--link-water);
-}
-
-@media screen and (min-width: 992px) {
-  .error404 .hero {
-    padding-top: var(--spacing-section-inner);
-    padding-bottom: var(--spacing-section-inner);
-  }
 }
 
 .error404 .hero .category {

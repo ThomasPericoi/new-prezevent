@@ -2,65 +2,6 @@
   padding-bottom: var(--spacing-title);
 }
 
-/* Related - Dossier */
-.related .posts-grid {
-  display: grid;
-  grid-gap: 2em;
-  grid-template-columns: repeat(1, 1fr);
-}
-
-@media screen and (min-width: 992px) {
-  .related .posts-grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3em;
-  }
-}
-
-.related .posts-grid .post {
-  display: flex;
-  flex-direction: column;
-  border-radius: var(--normal-radius);
-  overflow: hidden;
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1) !important;
-  transition: transform 0.25s ease;
-  transform: scale(1);
-}
-
-.related .posts-grid .post:hover {
-  transform: scale(1.025);
-}
-
-.related .posts-grid .post .thumbnail {
-  height: 250px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  object-fit: cover;
-}
-
-.related .posts-grid .post .content {
-  flex: 1 1 auto;
-  padding: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  background-color: var(--primary-1);
-}
-
-.related .posts-grid .post .content>* {
-  text-align: center;
-}
-
-.related .posts-grid .post .content>h3 {
-  margin-bottom: 1em;
-  color: var(--white);
-}
-
-.related .posts-grid .post .content>p {
-  color: var(--primary-3);
-}
-
 /* Related - Fonctionnalité */
 .related .features-grid {
   display: grid;

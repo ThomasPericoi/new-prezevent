@@ -31,6 +31,8 @@ Text Domain: prezevolve
 
 @import "./assets/css/elements/buttons.css";
 @import "./assets/css/elements/containers.css";
+@import "./assets/css/elements/grids.css";
+@import "./assets/css/elements/pagination.css";
 @import "./assets/css/elements/pill.css";
 
 /* #Blocks
@@ -56,7 +58,7 @@ Text Domain: prezevolve
 --------------------------------------------------------------- */
 
 @import "./assets/css/pages/404.css";
-@import "./assets/css/pages/archive.css";
 @import "./assets/css/pages/front-page.css";
+@import "./assets/css/pages/index.css";
 @import "./assets/css/pages/single.css";
 @import "./assets/css/pages/single-fonctionnalite.css";

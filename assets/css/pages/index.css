@@ -1,0 +1,37 @@
+/* Index / Archive */
+.blog .hero,
+.archive .hero {
+    padding-top: var(--spacing-section-inner);
+    padding-bottom: var(--spacing-section-inner);
+    text-align: center;
+    background-color: var(--link-water);
+}
+
+.blog .hero .description,
+.archive .hero .description {
+    margin-top: 1rem;
+}
+
+.blog .index,
+.archive .index {
+    margin: var(--spacing-section-outer) auto;
+}
+
+@media screen and (min-width: 992px) {
+
+    .blog .posts-grid .post:first-child,
+    .archive .posts-grid .post:first-child {
+        flex-direction: row;
+        grid-column: span 3;
+    }
+
+    .blog .posts-grid .post:first-child .thumbnail,
+    .archive .posts-grid .post:first-child .thumbnail {
+        width: 100%;
+    }
+
+    .blog .posts-grid .post:first-child .content,
+    .archive .posts-grid .post:first-child .content {
+        padding: 2.5rem;
+    }
+}

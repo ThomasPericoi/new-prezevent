@@ -1,0 +1,20 @@
+/* Pagination */
+.pagination {
+    text-align: center;
+    margin-top: var(--spacing-section-inner);
+}
+
+.pagination .nav-links>* {
+    text-decoration: none;
+}
+
+.pagination .page-numbers {
+    margin: 0 3px;
+    font-family: var(--bold);
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.pagination .page-numbers.current {
+    color: var(--primary-4);
+}
