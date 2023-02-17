@@ -1,8 +1,10 @@
-/* Single */
+/* #Single
+--------------------------------------------------------------- */
 .single-post {
   padding-top: var(--spacing-section-inner);
 }
 
+/* Hero */
 .single-post .hero {
   text-align: center;
 }
@@ -55,6 +57,7 @@
   text-align: right;
 }
 
+/* Related */
 .single-post .related {
   margin-top: var(--spacing-section-outer);
   margin-bottom: var(--spacing-section-outer);

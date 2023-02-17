@@ -31,7 +31,9 @@ Text Domain: prezevolve
 
 @import "./assets/css/elements/buttons.css";
 @import "./assets/css/elements/containers.css";
+@import "./assets/css/elements/footer.css";
 @import "./assets/css/elements/grids.css";
+@import "./assets/css/elements/header.css";
 @import "./assets/css/elements/pagination.css";
 @import "./assets/css/elements/pill.css";
 

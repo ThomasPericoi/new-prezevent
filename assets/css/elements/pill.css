@@ -1,4 +1,5 @@
-/* Pillule */
+/* #Pill
+--------------------------------------------------------------- */
 [data-pill]:after {
   content: attr(data-pill);
   padding: 0.3rem 0.5rem;

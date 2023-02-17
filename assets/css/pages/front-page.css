@@ -1,4 +1,6 @@
-/* Front-page */
+/* #Front-page
+--------------------------------------------------------------- */
+/* Hero */
 .home .hero {
   padding-top: calc(var(--spacing-section-inner)*2);
   padding-bottom: calc(var(--spacing-section-inner)*2);
