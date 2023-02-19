@@ -28,7 +28,7 @@
             "name": "subtitle",
             "aria-label": "",
             "type": "text",
-            "instructions": "Laisser vide pour ne pas afficher de titre.",
+            "instructions": "Laisser vide pour ne pas afficher de sous-titre.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -130,5 +130,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1676811764
+    "modified": 1676816245
 }

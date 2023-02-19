@@ -1,0 +1,11 @@
+/* #Logos
+--------------------------------------------------------------- */
+.logos {
+  padding: var(--spacing-section-inner) 0;
+  background-color: var(--link-water);
+}
+
+.logos .introduction {
+  margin-bottom: var(--spacing-section-inner);
+  text-align: center;
+}

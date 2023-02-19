@@ -1,5 +1,26 @@
 /* #Grids
 --------------------------------------------------------------- */
+/* Logos grid */
+.logos-grid {
+    display: grid;
+    grid-gap: 3em;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, 125px);
+}
+
+.logos-grid .logo img {
+    width: 100%;
+    max-height: 75px;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.logos-grid .logo img:hover {
+    opacity: 1;
+}
+
 /* Posts grid */
 .posts-grid {
     display: grid;

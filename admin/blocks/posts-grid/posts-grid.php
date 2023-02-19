@@ -28,7 +28,6 @@ if (!empty($block['className'])) {
 
 $styles = array("");
 $style  = implode('; ', $styles);
-
 ?>
 
 <!-- Block - Posts grid -->

@@ -21,3 +21,10 @@
   font-weight: 600;
   color: var(--primary-1);
 }
+
+
+.perk img {
+  max-width: 240px;
+  margin: 0 auto 2em auto;
+  display: block;
+}

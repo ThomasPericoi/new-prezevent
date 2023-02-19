@@ -23,14 +23,20 @@ $style  = implode('; ', $styles);
 ?>
 <?php if (have_rows('perk')) : ?>
     <!-- Block - Perks -->
-    <section class="container <?php echo esc_attr($classes); ?>" <?php if ($style) : ?>style="<?php echo esc_attr($style); ?>" <?php endif; ?>>
-        <?php while (have_rows('perk')) : the_row();
-            $title = get_sub_field('title');
-            $text = get_sub_field('text'); ?>
-            <div class="perk">
-                <span class="title"><?php echo $title; ?></span>
-                <p><?php echo $text; ?></p>
-            </div>
-        <?php endwhile; ?>
+    <section class="<?php echo esc_attr($classes); ?>" <?php if ($style) : ?>style="<?php echo esc_attr($style); ?>" <?php endif; ?>>
+        <div class="container">
+            <?php while (have_rows('perk')) : the_row();
+                $title = get_sub_field('title');
+                $text = get_sub_field('text');
+                $image = get_sub_field('image'); ?>
+                <div class="perk">
+                    <?php if ($image) : ?>
+                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                    <?php endif; ?>
+                    <span class="title"><?php echo $title; ?></span>
+                    <p><?php echo $text; ?></p>
+                </div>
+            <?php endwhile; ?>
+        </div>
     </section>
 <?php endif; ?>

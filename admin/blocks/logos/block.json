@@ -1,0 +1,15 @@
+{
+    "name": "acf/logos",
+    "title": "Logos",
+    "description": "Permet l'affichage de logos, notamment utile pour ceux des clients.",
+    "category": "prezevolve",
+    "icon": "screenoptions",
+    "keywords": [
+        "client",
+        "logo"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "logos.php"
+    }
+}
