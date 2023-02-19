@@ -1,6 +1,6 @@
 /* #Single - Changelog
 --------------------------------------------------------------- */
-.single-changelog {
+.single-changelog main {
     padding-top: var(--spacing-section-inner);
     padding-bottom: var(--spacing-section-inner);
 }

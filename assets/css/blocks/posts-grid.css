@@ -1,0 +1,15 @@
+/* #Posts grid
+--------------------------------------------------------------- */
+.posts-grid-block {
+    padding: var(--spacing-section-inner) 0;
+    text-align: center;
+    background-color: var(--link-water);
+}
+
+.posts-grid-block .introduction {
+    margin-bottom: var(--spacing-section-inner);
+}
+
+.posts-grid-block .btn {
+    margin: var(--spacing-section-inner) auto 0 auto;
+}

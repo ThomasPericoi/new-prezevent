@@ -44,6 +44,7 @@ Text Domain: prezevolve
 @import "./assets/css/blocks/content-media.css";
 @import "./assets/css/blocks/highlighting.css";
 @import "./assets/css/blocks/perks.css";
+@import "./assets/css/blocks/posts-grid.css";
 @import "./assets/css/blocks/summary.css";
 @import "./assets/css/blocks/testimonials.css";
 

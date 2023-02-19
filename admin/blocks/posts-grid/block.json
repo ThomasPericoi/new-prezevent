@@ -1,0 +1,14 @@
+{
+  "name": "acf/posts-grid",
+  "title": "Grille de dossiers",
+  "description": "Insertion de plusieurs dossiers, avec la possibilité de sélectionner des catégories.",
+  "category": "prezevolve",
+  "icon": "schedule",
+  "keywords": [
+    "post"
+  ],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "posts-grid.php"
+  }
+}

@@ -31,6 +31,12 @@
 #footer .main-footer .socials>a {
   max-width: 30px;
   margin: 0 7px;
+  transform: scale(1);
+  transition: transform ease 250ms;
+}
+
+#footer .main-footer .socials>a:hover {
+  transform: scale(0.9);
 }
 
 #footer .main-footer .socials svg {

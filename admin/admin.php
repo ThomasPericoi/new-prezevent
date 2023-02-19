@@ -77,7 +77,7 @@ add_action('init', 'register_lp_labels_taxonomy');
 // Register blocks
 function register_acf_blocks()
 {
-    $blocks = ["card-location", "content-media", "highlighting", "perks", "summary", "testimonials"];
+    $blocks = ["card-location", "content-media", "highlighting", "perks", "posts-grid", "summary", "testimonials"];
 
     foreach ($blocks as $block) {
         register_block_type(__DIR__ . '/blocks/' . $block);

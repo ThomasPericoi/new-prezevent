@@ -1,6 +1,6 @@
 /* #Single
 --------------------------------------------------------------- */
-.single-post {
+.single-post main {
   padding-top: var(--spacing-section-inner);
 }
 
