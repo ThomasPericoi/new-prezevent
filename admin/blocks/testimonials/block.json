@@ -4,7 +4,11 @@
   "description": "Un témoignage donné par un client ou ancien client.",
   "category": "prezevolve",
   "icon": "format-quote",
-  "keywords": ["quote", "review", "testimonial"],
+  "keywords": [
+    "quote",
+    "review",
+    "testimonial"
+  ],
   "acf": {
     "mode": "edit",
     "renderTemplate": "testimonials.php"

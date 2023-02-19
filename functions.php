@@ -57,6 +57,8 @@ function register_menus()
     register_nav_menus(
         array(
             'header-menu' => 'Header Menu',
+            'footer-menu-1' => 'Footer Menu 1',
+            'footer-menu-2' => 'Footer Menu 2',
         )
     );
 }

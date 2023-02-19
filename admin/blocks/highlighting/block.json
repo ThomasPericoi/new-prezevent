@@ -4,7 +4,9 @@
   "description": "Une attention portée sur une conclusion ou une information.",
   "category": "prezevolve",
   "icon": "sticky",
-  "keywords": ["important"],
+  "keywords": [
+    "important"
+  ],
   "acf": {
     "mode": "edit",
     "renderTemplate": "highlighting.php"

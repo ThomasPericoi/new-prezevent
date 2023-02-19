@@ -2,9 +2,14 @@
   "name": "acf/perks",
   "title": "Avantages",
   "description": "Une liste d'avantages, potentiellement avec une icône.",
+  "style": "perks",
   "category": "prezevolve",
   "icon": "saved",
-  "keywords": ["list", "perks", "skills"],
+  "keywords": [
+    "list",
+    "perks",
+    "skills"
+  ],
   "acf": {
     "mode": "edit",
     "renderTemplate": "perks.php"

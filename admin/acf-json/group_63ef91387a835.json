@@ -3,6 +3,185 @@
     "title": "OPTIONS DU THÈME - Footer",
     "fields": [
         {
+            "key": "field_63f274a573bff",
+            "label": "Informations",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_63f274cb73c00",
+            "label": "Logo alternatif",
+            "name": "footer_logo_alt",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Laisser vide pour afficher le logo original.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_63f27590596cf",
+            "label": "Adresse postale",
+            "name": "footer_address",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Les sauts à la ligne sont pris en compte.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_63f27650596d1",
+            "label": "Adresse email",
+            "name": "footer_email",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_63f275d9596d0",
+            "label": "Numéro de téléphone",
+            "name": "footer_phone",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_63f2856cbf367",
+            "label": "Liens vers l'application",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_63f2857fbf368",
+            "label": "Titre",
+            "name": "footer_app_link_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Laisser vide pour ne pas afficher de titre.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_63f27fb4e9c2e",
+            "label": "Lien de l'application (Apple Store)",
+            "name": "footer_app_link_apple",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_63f27fd9e9c2f",
+            "label": "Lien de l'application (Google Play Store)",
+            "name": "footer_app_link_google",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_63ef9c7b1b56f",
             "label": "Copyrights",
             "name": "",
@@ -222,5 +401,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1676648590
+    "modified": 1676838384
 }

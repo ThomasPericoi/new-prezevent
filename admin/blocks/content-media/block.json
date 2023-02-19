@@ -4,7 +4,13 @@
   "description": "Ajoute du contenu avec un média dans la page.",
   "category": "prezevolve",
   "icon": "align-pull-left",
-  "keywords": ["content", "image", "list", "text", "video"],
+  "keywords": [
+    "content",
+    "image",
+    "list",
+    "text",
+    "video"
+  ],
   "acf": {
     "mode": "edit",
     "renderTemplate": "content-media.php"
