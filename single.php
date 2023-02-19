@@ -2,7 +2,7 @@
 
 <!-- Hero -->
 <section class="hero">
-  <div class="container">
+  <div class="container container-small">
     <?php
     $cat = get_the_category();
     $cat_name = $cat[0]->cat_name;
@@ -43,7 +43,7 @@
 
 <!-- Content -->
 <section>
-  <div class="container formatted">
+  <div class="container container-small formatted">
     <?php the_content(); ?>
   </div>
 </section>
