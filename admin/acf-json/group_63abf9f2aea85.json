@@ -3,6 +3,31 @@
     "title": "BLOC - Avantages",
     "fields": [
         {
+            "key": "field_63f6509627332",
+            "label": "Style d'affichage",
+            "name": "style",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "grid": "Grille de 3",
+                "list": "Liste"
+            },
+            "default_value": "grid",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
             "key": "field_63abf9f33e840",
             "label": "Avantage",
             "name": "perk",
@@ -50,7 +75,7 @@
                     "label": "Texte",
                     "name": "text",
                     "aria-label": "",
-                    "type": "text",
+                    "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -60,21 +85,56 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0,
+                    "parent_repeater": "field_63abf9f33e840"
+                },
+                {
+                    "key": "field_63f64c2d55952",
+                    "label": "Type d'icône",
+                    "name": "type",
+                    "aria-label": "",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "none": "Aucun",
+                        "image": "Image",
+                        "icon": "Icône de Prezevent"
+                    },
+                    "default_value": "none",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "layout": "vertical",
+                    "save_other_choice": 0,
                     "parent_repeater": "field_63abf9f33e840"
                 },
                 {
                     "key": "field_63f2351f28c46",
-                    "label": "Icône",
+                    "label": "Icône (Image)",
                     "name": "image",
                     "aria-label": "",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_63f64c2d55952",
+                                "operator": "==",
+                                "value": "image"
+                            }
+                        ]
+                    ],
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -90,6 +150,61 @@
                     "max_size": "",
                     "mime_types": "",
                     "preview_size": "medium",
+                    "parent_repeater": "field_63abf9f33e840"
+                },
+                {
+                    "key": "field_63f64cce55953",
+                    "label": "Icône",
+                    "name": "icon",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_63f64c2d55952",
+                                "operator": "==",
+                                "value": "icon"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "badge": "Badge",
+                        "baloons": "Ballons",
+                        "checkin": "Check'in",
+                        "checklist": "Checklist",
+                        "speech": "Conférencier",
+                        "excel": "Excel",
+                        "form": "Formulaire",
+                        "gears": "Rouages",
+                        "greetings": "Salutations",
+                        "printer": "Imprimante à badges",
+                        "invitation": "Invitation",
+                        "list": "Liste",
+                        "messages": "Messages",
+                        "networking": "Networking",
+                        "notification": "Notification",
+                        "qrcode": "QR code",
+                        "productivity": "Productivité",
+                        "signature": "Signature",
+                        "website": "Site web",
+                        "sms": "SMS",
+                        "twitter": "Twitter",
+                        "workcase": "Sacoche"
+                    },
+                    "default_value": "baloons",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
                     "parent_repeater": "field_63abf9f33e840"
                 }
             ]
@@ -113,5 +228,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1676817710
+    "modified": 1677086919
 }

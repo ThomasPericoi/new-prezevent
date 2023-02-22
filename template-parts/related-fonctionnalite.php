@@ -8,7 +8,7 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/<?php echo get_field('feature_icon'); ?>-alt.svg" alt="Fonctionnalités">
                     <div>
                         <h3 class="h4-size"><?php the_title(); ?></h3>
-                        <p><?php echo get_field('feature_introduction'); ?></p>
+                        <div><?php echo get_field('feature_introduction'); ?></div>
                     </div>
                 </a>
             <?php endforeach; ?>

@@ -12,7 +12,9 @@
  * @param   array $context The context provided to the block by the post or it's parent block.
  */
 
-$classes = 'perks';
+$style = get_field('style');
+
+$classes = 'perks ' . $style;
 if (!empty($block['className'])) {
     $classes .= ' ' . $block['className'];
 }
@@ -27,13 +29,20 @@ $style  = implode('; ', $styles);
         <?php while (have_rows('perk')) : the_row();
             $title = get_sub_field('title');
             $text = get_sub_field('text');
+            $type = get_sub_field('type');
+            $icon = get_sub_field('icon');
             $image = get_sub_field('image'); ?>
             <div class="perk">
-                <?php if ($image) : ?>
+                <?php if (($type === "image") && ($image)) : ?>
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
                 <?php endif; ?>
-                <span class="title"><?php echo $title; ?></span>
-                <p><?php echo $text; ?></p>
+                <?php if (($type === "icon") && ($icon)) : ?>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/<?php echo $icon; ?>-alt.svg" alt="Fonctionnalités">
+                <?php endif; ?>
+                <div>
+                    <span class="title"><?php echo $title; ?></span>
+                    <div><?php echo $text; ?></div>
+                </div>
             </div>
         <?php endwhile; ?>
     </section>

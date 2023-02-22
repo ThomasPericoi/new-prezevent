@@ -4,6 +4,7 @@
   margin: var(--spacing-section-outer) auto;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
   grid-gap: 3em;
 }
 
@@ -11,6 +12,17 @@
   .perks {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.perks.list {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.perks.list .perk {
+  max-width: 620px;
+  display: flex;
+  align-items: center;
+  gap: 1em;
 }
 
 .perk .title {
@@ -26,4 +38,8 @@
   max-width: 240px;
   margin: 0 auto 2em auto;
   display: block;
+}
+
+.perks.list .perk img {
+  max-width: 125px;
 }
