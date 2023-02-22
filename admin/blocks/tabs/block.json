@@ -1,0 +1,15 @@
+{
+    "name": "acf/tabs",
+    "title": "Tabs",
+    "description": "Une sorte de slider, avec des \"tabs\" textuel en guise de pagination.",
+    "category": "prezevolve",
+    "icon": "category",
+    "keywords": [
+        "content",
+        "image"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "tabs.php"
+    }
+}

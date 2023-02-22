@@ -2,12 +2,11 @@
 --------------------------------------------------------------- */
 #footer {
   font-family: var(--bold);
-  font-size: 0.9em;
   background-color: var(--primary-1);
 }
 
 #footer .title {
-  color: var(--white);
+  color: var(--white) !important;
   margin-bottom: 1em;
   display: block;
   text-transform: uppercase;

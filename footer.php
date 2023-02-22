@@ -24,6 +24,9 @@
           $app_store_link = get_field('footer_app_link_apple', 'option');
           $play_store_link = get_field('footer_app_link_google', 'option');
           ?>
+          <?php if ($address || $email || $phone) : ?>
+            <span class="title"><?php echo __('Nous trouver', 'prezevolve'); ?></span>
+          <?php endif; ?>
           <?php if ($address) : ?>
             <div class="address">
               <?php echo $address; ?>

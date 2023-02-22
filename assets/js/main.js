@@ -47,4 +47,17 @@ $(document).ready(function () {
     $(this).next()
       .slideToggle(350);
   });
+
+  // Block - Tabs
+  $('.tabs nav a').on('click', function () {
+    show_content($(this).index());
+  });
+
+  function show_content(index) {
+    $('.tabs .content.visible').removeClass('visible');
+    $('.tabs .content:nth-of-type(' + (index + 1) + ')').addClass('visible');
+    $('.tabs nav a.selected').removeClass('selected');
+    $('.tabs nav a:nth-of-type(' + (index + 1) + ')').addClass('selected');
+  }
+  show_content(0);
 });

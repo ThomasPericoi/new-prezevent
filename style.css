@@ -50,9 +50,10 @@ Text Domain: prezevolve
 @import "./assets/css/blocks/media.css";
 @import "./assets/css/blocks/perks.css";
 @import "./assets/css/blocks/posts-grid.css";
-@import "./assets/css/blocks/summary.css";
-@import "./assets/css/blocks/testimonials.css";
 @import "./assets/css/blocks/shortcode.css";
+@import "./assets/css/blocks/summary.css";
+@import "./assets/css/blocks/tabs.css";
+@import "./assets/css/blocks/testimonials.css";
 
 /* #Template Parts
 --------------------------------------------------------------- */
