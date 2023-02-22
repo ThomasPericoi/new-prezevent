@@ -1,5 +1,48 @@
 /* #Grids
 --------------------------------------------------------------- */
+/* Features grid */
+.features-grid {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media screen and (min-width: 992px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3em;
+    }
+}
+
+.features-grid .feature {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.features-grid .feature img {
+    width: 100%;
+    max-width: 100px;
+    transform: scale(1);
+    transition: transform ease 250ms;
+}
+
+@media screen and (min-width: 992px) {
+    .features-grid .feature img {
+        max-width: 125px;
+    }
+}
+
+.features-grid .feature:hover img {
+    transform: scale(1.05);
+}
+
+.features-grid .feature p {
+    margin-top: 0.5em;
+    color: var(--primary-3);
+}
+
 /* Logos grid */
 .logos-grid {
     display: grid;

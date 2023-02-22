@@ -188,6 +188,16 @@ h6,
   }
 }
 
+.subtitle {
+  margin-bottom: 1rem;
+  display: block;
+  color: var(--primary-4);
+  font-family: var(--bold);
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .title-number {
   margin-right: 3px;
   font-weight: 700;

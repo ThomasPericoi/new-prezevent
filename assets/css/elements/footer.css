@@ -11,7 +11,7 @@
   margin-bottom: 1em;
   display: block;
   text-transform: uppercase;
-  font-size: 1.15em;
+  font-size: 1.2em;
 }
 
 #footer .main-footer {
@@ -21,6 +21,11 @@
 #footer .main-footer a {
   color: var(--primary-3);
   text-decoration: none;
+  transition: color ease 250ms;
+}
+
+#footer .main-footer a:hover {
+  color: var(--secondary-2);
 }
 
 #footer .main-footer>.container>*:not(:nth-last-child(1)) {
@@ -28,7 +33,7 @@
 }
 
 #footer .custom-logo-link {
-  max-width: 225px;
+  max-width: 200px;
   margin-right: auto;
   margin-left: auto;
   display: block;

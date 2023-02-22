@@ -42,6 +42,10 @@
   }
 }
 
+.content-media h2 {
+  padding-bottom: var(--spacing-title);
+}
+
 .content-media .media>* {
   width: 100%;
 }

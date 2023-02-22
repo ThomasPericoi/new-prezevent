@@ -20,6 +20,7 @@ $shadowed = $block_style["image_shadowed"] ? "shadowed" : "";
 // Content
 $content = get_field("content");
 $title = $content["title"];
+$subtitle = $content["subtitle"];
 $text = $content["text"];
 // Media
 $media = get_field("media");
@@ -41,6 +42,9 @@ $style  = implode('; ', $styles);
     <!-- Block - Content + Media -->
     <section class="container <?php echo esc_attr($classes); ?>" <?php if ($style) : ?>style="<?php echo esc_attr($style); ?>" <?php endif; ?>>
         <div class="content">
+            <?php if ($subtitle) : ?>
+                <span class="subtitle"><?php echo $subtitle; ?></span>
+            <?php endif; ?>
             <?php if ($title) : ?>
                 <h2><?php if ($number) : ?><span class="title-number"><?php echo $number; ?>.</span> <?php endif; ?><?php echo $title; ?></h2>
             <?php endif; ?>

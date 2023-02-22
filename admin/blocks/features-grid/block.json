@@ -1,0 +1,14 @@
+{
+    "name": "acf/features-grid",
+    "title": "Grille de fonctionnalités",
+    "description": "Une grille de fonctionnalités modulable.",
+    "category": "prezevolve",
+    "icon": "admin-generic",
+    "keywords": [
+        "feature"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "features-grid.php"
+    }
+}

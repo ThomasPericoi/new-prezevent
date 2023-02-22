@@ -1,0 +1,77 @@
+/* #Features grid
+--------------------------------------------------------------- */
+.features-grid-block {
+    position: relative;
+    padding: var(--spacing-section-outer) 0;
+}
+
+.features-grid-block:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: var(--primary-1);
+    transform: skew(0deg, -5deg);
+}
+
+.features-grid-block .introduction {
+    margin-bottom: var(--spacing-section-inner);
+    text-align: center;
+}
+
+.features-grid-block .introduction .subtitle {
+    color: var(--tertiary-2);
+}
+
+.features-grid-block .introduction h2 {
+    color: var(--white);
+}
+
+.features-grid-block .introduction .description {
+    margin-top: 1em;
+}
+
+/* Section */
+.features-grid-block .section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+@media screen and (min-width: 768px) {
+    .features-grid-block .section {
+        flex-direction: row;
+    }
+}
+
+.features-grid-block .section:not(:nth-last-child(1)) {
+    margin-bottom: var(--spacing-section-inner);
+}
+
+.features-grid-block .section .presentation {
+    min-width: 300px;
+}
+
+.features-grid-block .section .subtitle {
+    color: var(--primary-3);
+}
+
+.features-grid-block .section h3 {
+    color: var(--white);
+}
+
+/* Grid */
+.features-grid-block .section .features-grid {
+    gap: 1em;
+}
+
+.features-grid-block .section .feature {
+    padding: 0.5em;
+    background-color: var(--secondary-1);
+    border-radius: var(--normal-radius);
+}
+
+.features-grid-block .section .feature h4 {
+    color: var(--white);
+}
