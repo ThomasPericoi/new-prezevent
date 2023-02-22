@@ -1,0 +1,16 @@
+{
+    "name": "acf/content",
+    "title": "Contenu",
+    "description": "Ajoute du contenu dans la page.",
+    "category": "prezevolve",
+    "icon": "editor-aligncenter",
+    "keywords": [
+        "content",
+        "list",
+        "text"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "content.php"
+    }
+}

@@ -19,3 +19,37 @@
   max-width: 175px;
   height: auto;
 }
+
+/* Menu */
+#header .menu-header {
+  width: 85%;
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  #header .menu-header {
+    display: block;
+  }
+}
+
+#header .menu-header>ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  background-color: unset;
+}
+
+#header .menu-header>ul li a {
+  width: unset;
+  padding: 1em;
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color ease 250ms;
+}
+
+#header .menu-header>ul li a:hover {
+  color: var(--primary-3);
+}

@@ -1,0 +1,5 @@
+/* #Content
+--------------------------------------------------------------- */
+.content-block {
+    margin: var(--spacing-section-outer) auto;
+}

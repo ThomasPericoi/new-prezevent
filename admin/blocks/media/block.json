@@ -1,0 +1,15 @@
+{
+    "name": "acf/media",
+    "title": "Média",
+    "description": "Ajoute une image ou une vidéo dans la page.",
+    "category": "prezevolve",
+    "icon": "format-image",
+    "keywords": [
+        "image",
+        "video"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "media.php"
+    }
+}

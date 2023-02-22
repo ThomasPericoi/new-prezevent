@@ -1,0 +1,36 @@
+/* #Media
+--------------------------------------------------------------- */
+.media-block {
+    margin: var(--spacing-section-outer) auto;
+}
+
+.media-block .content {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .media-block>.media.video {
+        overflow: hidden;
+    }
+}
+
+.media-block>.media {
+    margin: 0 auto;
+}
+
+.media-block .media>* {
+    width: 100%;
+}
+
+.media-block .media.shadowed>* {
+    box-shadow: 5px 5px 25px -5px rgb(0 0 0 / 15%);
+}
+
+.media-block .media>img {
+    border-radius: var(--normal-radius);
+}
+
+.media-block .media>video {
+    width: 101%;
+    margin: -1px;
+}
