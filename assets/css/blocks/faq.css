@@ -1,0 +1,53 @@
+/* #F.A.Q.
+--------------------------------------------------------------- */
+.faq-block {
+    position: relative;
+    padding: var(--spacing-section-outer) 0;
+}
+
+.faq-block:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: var(--primary-1);
+    transform: skew(0deg, -5deg);
+}
+
+.faq-block .introduction {
+    margin-bottom: var(--spacing-section-inner);
+    text-align: center;
+}
+
+.faq-block .introduction .subtitle {
+    color: var(--tertiary-2);
+}
+
+.faq-block .introduction h2 {
+    color: var(--white);
+}
+
+.faq-block .introduction .description {
+    margin-top: 1em;
+}
+
+/* List */
+.faq-list .item:not(:nth-last-child(1)) {
+    margin-bottom: var(--spacing-section-inner);
+}
+
+.faq-list .question {
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.faq-list .question h3 {
+    font-weight: 500;
+    color: var(--primary-3);
+}
+
+.faq-list li.answer {
+    color: var(--white);
+    font-weight: 300;
+}

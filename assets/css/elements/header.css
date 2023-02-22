@@ -24,23 +24,19 @@
 #header .menu-header {
   width: 85%;
   display: none;
-}
-
-@media screen and (min-width: 992px) {
-  #header .menu-header {
-    display: block;
-  }
-}
-
-#header .menu-header>ul {
-  display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-direction: row;
   background-color: unset;
 }
 
-#header .menu-header>ul li a {
+@media screen and (min-width: 992px) {
+  #header .menu-header {
+    display: flex;
+  }
+}
+
+#header .menu-header li a {
   width: unset;
   padding: 1em;
   display: block;
@@ -50,6 +46,6 @@
   transition: color ease 250ms;
 }
 
-#header .menu-header>ul li a:hover {
+#header .menu-header li a:hover {
   color: var(--primary-3);
 }

@@ -101,7 +101,7 @@
         {
             "key": "field_63f643f0a3536",
             "label": "Titre",
-            "name": "feature_outro_title",
+            "name": "page_outro_title",
             "aria-label": "",
             "type": "text",
             "instructions": "Supplante le titre de base. Laissez vide pour afficher le titre de l'outro renseigné dans \"Options du thème\".",
@@ -152,5 +152,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1677083990
+    "modified": 1677088406
 }

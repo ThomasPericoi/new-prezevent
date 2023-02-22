@@ -41,4 +41,10 @@ $(document).ready(function () {
       }, 350);
     });
   }
+
+  // Block - F.A.Q.
+  $('.faq-list li.question').on('click', function () {
+    $(this).next()
+      .slideToggle(350);
+  });
 });

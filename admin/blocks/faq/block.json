@@ -1,0 +1,15 @@
+{
+    "name": "acf/faq",
+    "title": "F.A.Q.",
+    "description": "Insère des questions / réponses.",
+    "category": "prezevolve",
+    "icon": "microphone",
+    "keywords": [
+        "answer",
+        "question"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "faq.php"
+    }
+}
