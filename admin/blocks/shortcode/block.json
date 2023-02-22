@@ -1,0 +1,14 @@
+{
+    "name": "acf/shortcode",
+    "title": "Code court",
+    "description": "Insertion d'un code court, notamment pour un formulaire.",
+    "category": "prezevolve",
+    "icon": "shortcode",
+    "keywords": [
+        "shortcode"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "shortcode.php"
+    }
+}

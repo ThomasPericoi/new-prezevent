@@ -1,8 +1,9 @@
 /* #F.A.Q.
 --------------------------------------------------------------- */
 .faq-block {
-    position: relative;
     padding: var(--spacing-section-outer) 0;
+    margin: var(--spacing-section-outer) auto;
+    position: relative;
 }
 
 .faq-block:before {

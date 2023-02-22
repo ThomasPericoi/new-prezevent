@@ -2,6 +2,7 @@
 --------------------------------------------------------------- */
 .posts-grid-block {
     padding: var(--spacing-section-inner) 0;
+    margin-top: var(--spacing-section-outer);
     text-align: center;
     background-color: var(--link-water);
 }

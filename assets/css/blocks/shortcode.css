@@ -1,0 +1,5 @@
+/* #Shortcode
+--------------------------------------------------------------- */
+.shortcode-block {
+    margin: var(--spacing-section-outer) auto;
+}

@@ -3,6 +3,7 @@
 .features-grid-block {
     position: relative;
     padding: var(--spacing-section-outer) 0;
+    margin: var(--spacing-section-outer) auto;
 }
 
 .features-grid-block:before {

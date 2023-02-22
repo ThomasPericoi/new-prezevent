@@ -52,6 +52,7 @@ Text Domain: prezevolve
 @import "./assets/css/blocks/posts-grid.css";
 @import "./assets/css/blocks/summary.css";
 @import "./assets/css/blocks/testimonials.css";
+@import "./assets/css/blocks/shortcode.css";
 
 /* #Template Parts
 --------------------------------------------------------------- */
