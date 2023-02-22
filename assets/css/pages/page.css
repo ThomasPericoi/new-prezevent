@@ -1,2 +1,23 @@
 /* #Page
 --------------------------------------------------------------- */
+.page:not(.home) .hero {
+    padding-top: 1rem;
+    padding-bottom: var(--spacing-section-inner);
+    margin-bottom: var(--spacing-section-outer);
+    text-align: center;
+    background-color: var(--link-water);
+}
+
+@media screen and (min-width: 992px) {
+    .page:not(.home) .hero {
+        padding-top: var(--spacing-section-inner);
+    }
+}
+
+.page:not(.home) .hero .description {
+    margin-top: 1rem;
+}
+
+.page:not(.home) .hero .btn {
+    margin-top: 2rem;
+}

@@ -5,6 +5,7 @@
 }
 
 .media-block .content {
+    margin-bottom: var(--spacing-section-inner);
     text-align: center;
 }
 

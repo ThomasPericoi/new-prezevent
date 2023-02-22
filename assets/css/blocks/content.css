@@ -3,3 +3,7 @@
 .content-block {
     margin: var(--spacing-section-outer) auto;
 }
+
+.content-block h2 {
+    margin-bottom: var(--spacing-title);
+}
