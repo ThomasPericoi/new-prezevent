@@ -66,7 +66,7 @@
         </div>
       </div>
 
-      <?php if (get_field('logo_alt', 'option')) : ?>
+      <?php if (get_field('footer_copyrights', 'option')) : ?>
         <div class="copyrights">
           <?php echo "© 2015 - " .  date('Y') . " <a href=\"" . esc_html(get_home_url()) . "\">" . esc_html(get_bloginfo('name')) . "</a>, " . __("Tous droits réservés", "prezevolve"); ?>
         </div>
