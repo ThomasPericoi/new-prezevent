@@ -16,7 +16,7 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "top",
+            "placement": "left",
             "endpoint": 0
         },
         {
@@ -73,7 +73,7 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "top",
+            "placement": "left",
             "endpoint": 0
         },
         {
@@ -257,33 +257,13 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "top",
+            "placement": "left",
             "endpoint": 0
         },
         {
             "key": "field_639c591148fdf",
             "label": "Titre de la section",
             "name": "feature_related_title",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "Découvrez nos autres fonctionnalités",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_63cfa2f70f7cb",
-            "label": "Titre de la section",
-            "name": "post_related_title",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -337,7 +317,7 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "top",
+            "placement": "left",
             "endpoint": 0
         },
         {
@@ -379,5 +359,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1674552074
+    "modified": 1677608026
 }
