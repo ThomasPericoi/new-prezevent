@@ -12,14 +12,14 @@
  * @param   array $context The context provided to the block by the post or it's parent block.
  */
 
-// Style
-$block_style = get_field("style");
-$number = $block_style["number"];
 // Content
 $content = get_field("content");
 $subtitle = $content["subtitle"];
 $title = $content["title"];
 $text = $content["text"];
+// Options
+$block_style = get_field("style");
+$number = $block_style["number"];
 
 $classes = 'content-block';
 if (!empty($block['className'])) {

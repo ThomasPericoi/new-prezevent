@@ -1,0 +1,14 @@
+{
+    "name": "acf/ads",
+    "title": "Publicité interne",
+    "description": "Ajoute une \"card\" qui redirige vers une autre page.",
+    "category": "prezevolve",
+    "icon": "editor-contract",
+    "keywords": [
+        "content"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "ads.php"
+    }
+}

@@ -1,0 +1,44 @@
+/* #Ads
+--------------------------------------------------------------- */
+.ads .content {
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--normal-radius);
+    background: var(--primary-1);
+    overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    .ads .content {
+        flex-direction: row;
+    }
+}
+
+.ads .content span {
+    padding: 2em;
+    display: block;
+    color: var(--white);
+    font-family: var(--bold);
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .ads .content span {
+        padding: 1em;
+        text-align: left;
+    }
+}
+
+.ads .content img {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .ads .content img {
+        max-width: 40%;
+    }
+}
