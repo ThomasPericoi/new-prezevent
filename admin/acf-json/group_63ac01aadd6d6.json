@@ -211,31 +211,6 @@
                     "save_other_choice": 0
                 },
                 {
-                    "key": "field_63f64bf090f25",
-                    "label": "Type d'icônes",
-                    "name": "type",
-                    "aria-label": "",
-                    "type": "radio",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "image": "Image",
-                        "video": "Vidéo"
-                    },
-                    "default_value": "image",
-                    "return_format": "value",
-                    "allow_null": 0,
-                    "other_choice": 0,
-                    "layout": "vertical",
-                    "save_other_choice": 0
-                },
-                {
                     "key": "field_63ac03b3fa0f8",
                     "label": "Image",
                     "name": "image",
@@ -339,5 +314,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1677085700
+    "modified": 1677615651
 }

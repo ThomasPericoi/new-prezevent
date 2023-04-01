@@ -12,6 +12,10 @@
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 3em;
     }
+
+    .features-grid.list {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .features-grid .feature {

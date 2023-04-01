@@ -47,7 +47,8 @@ $style  = implode('; ', $styles);
                 while (have_rows('section')) : the_row();
                     $subtitle = get_sub_field('subtitle');
                     $title = get_sub_field('title');
-                    $features = get_sub_field('feature'); ?>
+                    $features = get_sub_field('feature');
+                    $display = get_field('display'); ?>
                     <div class="section">
                         <div class="presentation">
                             <?php if ($subtitle) : ?>
@@ -57,7 +58,7 @@ $style  = implode('; ', $styles);
                                 <h3><?php echo $title; ?></h2>
                                 <?php endif; ?>
                         </div>
-                        <div class="features-grid">
+                        <div class="features-grid <?php echo $display; ?>">
                             <?php global $post;
                             foreach ($features as $post) :
                                 setup_postdata($post); ?>
