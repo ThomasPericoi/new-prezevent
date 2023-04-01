@@ -3,11 +3,11 @@
     "title": "BLOC - Contenu + Média",
     "fields": [
         {
-            "key": "field_63ac01aba5a29",
-            "label": "Style",
-            "name": "style",
+            "key": "field_6428559d6033e",
+            "label": "Informations",
+            "name": "",
             "aria-label": "",
-            "type": "group",
+            "type": "tab",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,80 +16,43 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_63ac0204a5a2a",
-                    "label": "Placement du média",
-                    "name": "placement",
-                    "aria-label": "",
-                    "type": "radio",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "left": "Gauche",
-                        "right": "Droite"
-                    },
-                    "default_value": "right",
-                    "return_format": "value",
-                    "allow_null": 0,
-                    "other_choice": 0,
-                    "layout": "vertical",
-                    "save_other_choice": 0
-                },
-                {
-                    "key": "field_63ac0235a5a2b",
-                    "label": "Numérotation",
-                    "name": "number",
-                    "aria-label": "",
-                    "type": "number",
-                    "instructions": "Laissez vide pour ne pas afficher de numérotation.",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "min": "",
-                    "max": "",
-                    "placeholder": "",
-                    "step": "",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
-                    "key": "field_63ac272afebc5",
-                    "label": "Image ombrée",
-                    "name": "image_shadowed",
-                    "aria-label": "",
-                    "type": "checkbox",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "true": "Oui"
-                    },
-                    "default_value": [],
-                    "return_format": "value",
-                    "allow_custom": 0,
-                    "layout": "vertical",
-                    "toggle": 0,
-                    "save_custom": 0
-                }
-            ]
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_642855ad6033f",
+            "label": "Contenu + Média",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Ajoute du contenu avec un média dans la page.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_642855d960340",
+            "label": "Contenu",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
         },
         {
             "key": "field_63ac0274a5a2c",
@@ -183,7 +146,7 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "block",
+            "layout": "table",
             "sub_fields": [
                 {
                     "key": "field_63ac037cfa0f7",
@@ -270,10 +233,92 @@
                     "min_size": "",
                     "max_size": "",
                     "mime_types": ""
+                }
+            ]
+        },
+        {
+            "key": "field_642855fa60341",
+            "label": "Options",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_63ac0235a5a2b",
+            "label": "Numérotation",
+            "name": "number",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Laissez vide pour ne pas afficher de numérotation.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_63ac01aba5a29",
+            "label": "Style",
+            "name": "style",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_63ac0204a5a2a",
+                    "label": "Placement du média",
+                    "name": "placement",
+                    "aria-label": "",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "left": "Gauche",
+                        "right": "Droite"
+                    },
+                    "default_value": "right",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "layout": "vertical",
+                    "save_other_choice": 0
                 },
                 {
-                    "key": "field_63ce53db851c8",
-                    "label": "Taille maximale",
+                    "key": "field_642856b96ce5b",
+                    "label": "Taille maximale du média",
                     "name": "maximum_size",
                     "aria-label": "",
                     "type": "number",
@@ -292,6 +337,38 @@
                     "step": "",
                     "prepend": "",
                     "append": ""
+                },
+                {
+                    "key": "field_63ac272afebc5",
+                    "label": "Image ombrée",
+                    "name": "image_shadowed",
+                    "aria-label": "",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_63ac037cfa0f7",
+                                "operator": "==",
+                                "value": "image"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "true": "Oui"
+                    },
+                    "default_value": [],
+                    "return_format": "value",
+                    "allow_custom": 0,
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "save_custom": 0
                 }
             ]
         }
@@ -314,5 +391,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1677615651
+    "modified": 1680366773
 }

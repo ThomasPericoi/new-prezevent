@@ -2,6 +2,9 @@
 --------------------------------------------------------------- */
 .perks {
   margin: var(--spacing-section-outer) auto;
+}
+
+.perks>.container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   justify-items: center;
@@ -9,12 +12,12 @@
 }
 
 @media screen and (min-width: 767px) {
-  .perks {
+  .perks>.container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.perks.list {
+.perks.list>.container {
   grid-template-columns: repeat(1, 1fr);
 }
 

@@ -3,7 +3,6 @@
 .logos {
   padding: var(--spacing-section-inner) 0;
   margin-bottom: var(--spacing-section-outer);
-  background-color: var(--link-water);
 }
 
 .logos .introduction {

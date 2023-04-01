@@ -20,13 +20,15 @@ $button = get_field("button");
 $amount = get_field("amount");
 $categories = get_field("categories");
 $tags = get_field("tags");
+// Options
+$background = get_field("background_color");
 
 $classes = 'posts-grid-block';
 if (!empty($block['className'])) {
   $classes .= ' ' . $block['className'];
 }
 
-$styles = array("");
+$styles = array("background-color: " . $background . "");
 $style  = implode('; ', $styles);
 ?>
 

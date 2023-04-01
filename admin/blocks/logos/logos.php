@@ -15,13 +15,15 @@
 // Content
 $title = get_field("title");
 $subtitle = get_field("subtitle");
+// Options
+$background = get_field("background_color");
 
 $classes = 'logos';
 if (!empty($block['className'])) {
   $classes .= ' ' . $block['className'];
 }
 
-$styles = array("");
+$styles = array("background-color: " . $background . "");
 $style  = implode('; ', $styles);
 ?>
 

@@ -12,9 +12,9 @@
  * @param   array $context The context provided to the block by the post or it's parent block.
  */
 
-$style = get_field('style');
+$display = get_field('display');
 
-$classes = 'perks ' . $style;
+$classes = 'perks ' . $display;
 if (!empty($block['className'])) {
     $classes .= ' ' . $block['className'];
 }
@@ -25,25 +25,27 @@ $style  = implode('; ', $styles);
 ?>
 <?php if (have_rows('perk')) : ?>
     <!-- Block - Perks -->
-    <section class="container <?php echo esc_attr($classes); ?>" <?php if ($style) : ?>style="<?php echo esc_attr($style); ?>" <?php endif; ?>>
-        <?php while (have_rows('perk')) : the_row();
-            $title = get_sub_field('title');
-            $text = get_sub_field('text');
-            $type = get_sub_field('type');
-            $icon = get_sub_field('icon');
-            $image = get_sub_field('image'); ?>
-            <div class="perk">
-                <?php if (($type === "image") && ($image)) : ?>
-                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
-                <?php endif; ?>
-                <?php if (($type === "icon") && ($icon)) : ?>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/<?php echo $icon; ?>-alt.svg" alt="Fonctionnalités">
-                <?php endif; ?>
-                <div>
-                    <span class="title"><?php echo $title; ?></span>
-                    <div><?php echo $text; ?></div>
+    <section class="<?php echo esc_attr($classes); ?>" <?php if ($style) : ?>style="<?php echo esc_attr($style); ?>" <?php endif; ?>>
+        <div class="container">
+            <?php while (have_rows('perk')) : the_row();
+                $title = get_sub_field('title');
+                $text = get_sub_field('text');
+                $type = get_sub_field('type');
+                $icon = get_sub_field('icon');
+                $image = get_sub_field('image'); ?>
+                <div class="perk">
+                    <?php if (($type === "image") && ($image)) : ?>
+                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                    <?php endif; ?>
+                    <?php if (($type === "icon") && ($icon)) : ?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/<?php echo $icon; ?>-alt.svg" alt="Fonctionnalités">
+                    <?php endif; ?>
+                    <div>
+                        <span class="title"><?php echo $title; ?></span>
+                        <div><?php echo $text; ?></div>
+                    </div>
                 </div>
-            </div>
-        <?php endwhile; ?>
+            <?php endwhile; ?>
+        </div>
     </section>
 <?php endif; ?>

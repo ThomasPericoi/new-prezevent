@@ -3,11 +3,11 @@
     "title": "BLOC - Avantages",
     "fields": [
         {
-            "key": "field_63f6509627332",
-            "label": "Style d'affichage",
-            "name": "style",
+            "key": "field_64285429630d2",
+            "label": "Informations",
+            "name": "",
             "aria-label": "",
-            "type": "radio",
+            "type": "tab",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,16 +16,43 @@
                 "class": "",
                 "id": ""
             },
-            "choices": {
-                "grid": "Grille de 3",
-                "list": "Liste"
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_642854da8700a",
+            "label": "Avantages",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
             },
-            "default_value": "grid",
-            "return_format": "value",
-            "allow_null": 0,
-            "other_choice": 0,
-            "layout": "vertical",
-            "save_other_choice": 0
+            "message": "Une liste d'avantages, potentiellement avec une icône.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_64285436630d3",
+            "label": "Contenu",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
         },
         {
             "key": "field_63abf9f33e840",
@@ -208,6 +235,48 @@
                     "parent_repeater": "field_63abf9f33e840"
                 }
             ]
+        },
+        {
+            "key": "field_6428543c630d4",
+            "label": "Options",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_63f6509627332",
+            "label": "Affichage des avantages",
+            "name": "display",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "grid": "Grille de 3",
+                "list": "Liste"
+            },
+            "default_value": "grid",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
         }
     ],
     "location": [
@@ -228,5 +297,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1677615651
+    "modified": 1680364854
 }

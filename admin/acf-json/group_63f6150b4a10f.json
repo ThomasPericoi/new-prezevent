@@ -223,7 +223,7 @@
         },
         {
             "key": "field_64285075b5141",
-            "label": "Style",
+            "label": "Options",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -282,5 +282,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1680363975
+    "modified": 1680364845
 }

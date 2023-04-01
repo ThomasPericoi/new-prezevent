@@ -12,10 +12,6 @@
  * @param   array $context The context provided to the block by the post or it's parent block.
  */
 
-// Style
-$block_style = get_field("style");
-$number = $block_style["number"];
-$shadowed = $block_style["image_shadowed"] ? "shadowed" : "";
 // Content
 $content = get_field("content");
 $title = $content["title"];
@@ -25,7 +21,11 @@ $media = get_field("media");
 $type = $media["type"];
 $image = $media["image"];
 $video = $media["video"];
-$max_size = $media["maximum_size"];
+// Options
+$number = $get_field("number");
+$block_style = get_field("style");
+$max_size = $block_style["maximum_size"];
+$shadowed = $block_style["image_shadowed"] ? "shadowed" : "";
 
 $classes = 'media-block';
 if (!empty($block['className'])) {

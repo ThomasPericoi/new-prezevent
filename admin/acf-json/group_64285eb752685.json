@@ -1,0 +1,58 @@
+{
+    "key": "group_64285eb752685",
+    "title": "OPTION DE BLOC - Arrière-plan",
+    "fields": [
+        {
+            "key": "field_64285eb773292",
+            "label": "Arrière-plan",
+            "name": "color",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "transparent": "Aucun",
+                "var(--lavender-blush)": "Lavender blush",
+                "var(--link-water)": "Link water",
+                "var(--primary-2)": "Primary",
+                "var(--primary-1)": "Primary (Dark)",
+                "var(--primary-4)": "Secondary",
+                "var(--tertiary-2)": "Tertiary",
+                "var(--white)": "Blanc",
+                "var(--black)": "Noir"
+            },
+            "default_value": "none",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_status",
+                "operator": "==",
+                "value": "acf-disabled"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1680369061
+}
