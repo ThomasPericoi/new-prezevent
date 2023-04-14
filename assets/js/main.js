@@ -23,7 +23,7 @@ $(document).ready(function () {
   );
 
   // General - Enable ASCII Printer on random
-  printAsciiRandom();
+  printRandomAscii();
 
   // General - Change tab name on blur
   if (!isMobile()) {
