@@ -7,7 +7,7 @@
   text-align: center;
   background: linear-gradient(135deg, var(--primary-1) 20%, var(--primary-4) 100%);
   background-size: 150% 100%;
-  animation: gradient 7.5s ease infinite;
+  animation: gradient 6s ease infinite;
 }
 
 @keyframes gradient {

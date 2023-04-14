@@ -40,6 +40,7 @@
 .single-fonctionnalite .hero .image-wrapper>* {
   width: 100%;
   max-width: 200px;
+  clip-path: inset(2px 2px);
 }
 
 @media screen and (min-width: 992px) {

@@ -59,6 +59,6 @@
 }
 
 .content-media .media>video {
-  width: 101%;
-  margin: -1px;
+  width: 100%;
+  clip-path: inset(2px 2px);
 }
