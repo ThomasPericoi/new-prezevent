@@ -26,40 +26,44 @@ $video = $media["video"];
 $number = get_field("number");
 $block_style = get_field("style");
 $placement = ($block_style["placement"] == "left") ? "flex-alternate" : "";
+$has_background = ($block_style["background_color"] == "none") ? "" : "has-background";
+$background = $block_style["background_color"];
 $max_size = $block_style["maximum_size"];
 $shadowed = $block_style["image_shadowed"] ? "shadowed" : "";
 
-$classes = 'content-media ' . $placement;
+$classes = 'content-media ' . $placement . ' ' . $has_background;
 if (!empty($block['className'])) {
     $classes .= ' ' . $block['className'];
 }
 
-$styles = array("");
+$styles = array("background-color: " . $background . "");
 $style  = implode('; ', $styles);
 
 ?>
 <?php if ($content && ($image || $video)) : ?>
     <!-- Block - Content + Media -->
-    <section class="container <?php echo esc_attr($classes); ?>" <?php if ($style) : ?>style="<?php echo esc_attr($style); ?>" <?php endif; ?>>
-        <div class="content">
-            <?php if ($subtitle) : ?>
-                <span class="subtitle"><?php echo $subtitle; ?></span>
-            <?php endif; ?>
-            <?php if ($title) : ?>
-                <h2><?php if ($number) : ?><span class="title-number"><?php echo $number; ?>.</span> <?php endif; ?><?php echo $title; ?></h2>
-            <?php endif; ?>
-            <div class="text formatted">
-                <?php echo $text; ?>
+    <section class="<?php echo esc_attr($classes); ?>" <?php if ($style) : ?>style="<?php echo esc_attr($style); ?>" <?php endif; ?>>
+        <div class="container">
+            <div class="content">
+                <?php if ($subtitle) : ?>
+                    <span class="subtitle"><?php echo $subtitle; ?></span>
+                <?php endif; ?>
+                <?php if ($title) : ?>
+                    <h2><?php if ($number) : ?><span class="title-number"><?php echo $number; ?>.</span> <?php endif; ?><?php echo $title; ?></h2>
+                <?php endif; ?>
+                <div class="text formatted">
+                    <?php echo $text; ?>
+                </div>
             </div>
-        </div>
-        <div class="media <?php echo $type; ?> <?php echo $shadowed; ?>" style="<?php if ($max_size) : ?>max-width:<?php echo $max_size; ?>px;<?php endif; ?>">
-            <?php if ($type == "image") : ?>
-                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
-            <?php else : ?>
-                <video loop autoplay muted playsinline>
-                    <source src="<?php echo $video["url"]; ?>" type="video/mp4">
-                </video>
-            <?php endif; ?>
+            <div class="media <?php echo $type; ?> <?php echo $shadowed; ?>" style="<?php if ($max_size) : ?>max-width:<?php echo $max_size; ?>px;<?php endif; ?>">
+                <?php if ($type == "image") : ?>
+                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                <?php else : ?>
+                    <video loop autoplay muted playsinline>
+                        <source src="<?php echo $video["url"]; ?>" type="video/mp4">
+                    </video>
+                <?php endif; ?>
+            </div>
         </div>
     </section>
 <?php endif; ?>

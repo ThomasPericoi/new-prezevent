@@ -289,6 +289,28 @@
             "layout": "block",
             "sub_fields": [
                 {
+                    "key": "field_643ea143b722a",
+                    "label": "Arrière-plan",
+                    "name": "background",
+                    "aria-label": "",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "field_64285eb773292"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 1
+                },
+                {
                     "key": "field_63f63f6137e6c",
                     "label": "Taille maximale",
                     "name": "maximum_size",
@@ -363,5 +385,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1680366753
+    "modified": 1681826478
 }

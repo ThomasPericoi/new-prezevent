@@ -1,6 +1,10 @@
 /* #Content + Media
 --------------------------------------------------------------- */
-.content-media {
+.content-media.has-background {
+  padding: 1px 0;
+}
+
+.content-media .container {
   margin: var(--spacing-section-outer) auto;
   display: flex;
   flex-direction: column;
@@ -9,29 +13,29 @@
 }
 
 @media screen and (min-width: 768px) {
-  .content-media {
+  .content-media .container {
     flex-direction: row;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .content-media.flex-alternate {
+  .content-media.flex-alternate .container {
     flex-direction: row-reverse;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .content-media {
+  .content-media .container {
     gap: 6rem;
   }
 }
 
-.content-media>div {
+.content-media .container>div {
   flex: 1 1 0;
 }
 
 @media screen and (min-width: 768px) {
-  .content-media>div {
+  .content-media .container>div {
     max-width: 50%;
   }
 }

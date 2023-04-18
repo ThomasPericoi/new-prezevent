@@ -19,29 +19,33 @@ $title = $content["title"];
 $text = $content["text"];
 // Options
 $block_style = get_field("style");
-$number = $block_style["number"];
+$number = get_field("number");
+$has_background = ($block_style["background_color"] == "none") ? "" : "has-background";
+$background = $block_style["background_color"];
 
-$classes = 'content-block';
+$classes = 'content-block ' . $has_background;
 if (!empty($block['className'])) {
     $classes .= ' ' . $block['className'];
 }
 
-$styles = array("");
+$styles = array("background-color: " . $background . "");
 $style  = implode('; ', $styles);
 
 ?>
 <?php if ($content) : ?>
     <!-- Block - Content -->
-    <section class="container <?php echo esc_attr($classes); ?>" <?php if ($style) : ?>style="<?php echo esc_attr($style); ?>" <?php endif; ?>>
-        <div class="content">
-            <?php if ($subtitle) : ?>
-                <span class="subtitle"><?php echo $subtitle; ?></span>
-            <?php endif; ?>
-            <?php if ($title) : ?>
-                <h2><?php if ($number) : ?><span class="title-number"><?php echo $number; ?>.</span> <?php endif; ?><?php echo $title; ?></h2>
-            <?php endif; ?>
-            <div class="text formatted">
-                <?php echo $text; ?>
+    <section class="<?php echo esc_attr($classes); ?>" <?php if ($style) : ?>style="<?php echo esc_attr($style); ?>" <?php endif; ?>>
+        <div class="container">
+            <div class="content">
+                <?php if ($subtitle) : ?>
+                    <span class="subtitle"><?php echo $subtitle; ?></span>
+                <?php endif; ?>
+                <?php if ($title) : ?>
+                    <h2><?php if ($number) : ?><span class="title-number"><?php echo $number; ?>.</span> <?php endif; ?><?php echo $title; ?></h2>
+                <?php endif; ?>
+                <div class="text formatted">
+                    <?php echo $text; ?>
+                </div>
             </div>
         </div>
     </section>

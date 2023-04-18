@@ -22,41 +22,45 @@ $type = $media["type"];
 $image = $media["image"];
 $video = $media["video"];
 // Options
-$number = $get_field("number");
+$number = get_field("number");
 $block_style = get_field("style");
+$has_background = ($block_style["background_color"] == "none") ? "" : "has-background";
+$background = $block_style["background_color"];
 $max_size = $block_style["maximum_size"];
 $shadowed = $block_style["image_shadowed"] ? "shadowed" : "";
 
-$classes = 'media-block';
+$classes = 'media-block ' . $has_background;
 if (!empty($block['className'])) {
     $classes .= ' ' . $block['className'];
 }
 
-$styles = array("");
+$styles = array("background-color: " . $background . "");
 $style  = implode('; ', $styles);
 
 ?>
 <?php if (($image || $video)) : ?>
     <!-- Block - Media -->
-    <section class="container <?php echo esc_attr($classes); ?>" <?php if ($style) : ?>style="<?php echo esc_attr($style); ?>" <?php endif; ?>>
-        <?php if (($subtitle || $title)) : ?>
-            <div class="content">
-                <?php if ($subtitle) : ?>
-                    <span class="subtitle"><?php echo $subtitle; ?></span>
-                <?php endif; ?>
-                <?php if ($title) : ?>
-                    <h2><?php if ($number) : ?><span class="title-number"><?php echo $number; ?>.</span> <?php endif; ?><?php echo $title; ?></h2>
+    <section class="<?php echo esc_attr($classes); ?>" <?php if ($style) : ?>style="<?php echo esc_attr($style); ?>" <?php endif; ?>>
+        <div class="container">
+            <?php if (($subtitle || $title)) : ?>
+                <div class="content">
+                    <?php if ($subtitle) : ?>
+                        <span class="subtitle"><?php echo $subtitle; ?></span>
+                    <?php endif; ?>
+                    <?php if ($title) : ?>
+                        <h2><?php if ($number) : ?><span class="title-number"><?php echo $number; ?>.</span> <?php endif; ?><?php echo $title; ?></h2>
+                    <?php endif; ?>
+                </div>
+            <?php endif; ?>
+            <div class="media <?php echo $type; ?> <?php echo $shadowed; ?>" style="<?php if ($max_size) : ?>max-width:<?php echo $max_size; ?>px;<?php endif; ?>">
+                <?php if ($type == "image") : ?>
+                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                <?php else : ?>
+                    <video loop autoplay muted playsinline>
+                        <source src="<?php echo $video["url"]; ?>" type="video/mp4">
+                    </video>
                 <?php endif; ?>
             </div>
-        <?php endif; ?>
-        <div class="media <?php echo $type; ?> <?php echo $shadowed; ?>" style="<?php if ($max_size) : ?>max-width:<?php echo $max_size; ?>px;<?php endif; ?>">
-            <?php if ($type == "image") : ?>
-                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
-            <?php else : ?>
-                <video loop autoplay muted playsinline>
-                    <source src="<?php echo $video["url"]; ?>" type="video/mp4">
-                </video>
-            <?php endif; ?>
         </div>
     </section>
 <?php endif; ?>

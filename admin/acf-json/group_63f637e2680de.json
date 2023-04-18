@@ -3,11 +3,11 @@
     "title": "BLOC - Contenu",
     "fields": [
         {
-            "key": "field_63f637e26d28d",
-            "label": "Style",
-            "name": "style",
+            "key": "field_643ea176d6b86",
+            "label": "Informations",
+            "name": "",
             "aria-label": "",
-            "type": "group",
+            "type": "tab",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,31 +16,43 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_63f637e27c02f",
-                    "label": "Numérotation",
-                    "name": "number",
-                    "aria-label": "",
-                    "type": "number",
-                    "instructions": "Laissez vide pour ne pas afficher de numérotation.",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "min": "",
-                    "max": "",
-                    "placeholder": "",
-                    "step": "",
-                    "prepend": "",
-                    "append": ""
-                }
-            ]
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_643ea18cd6b87",
+            "label": "Contenu",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Ajoute du contenu dans la page.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_643ea1d9d6b88",
+            "label": "Contenu",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
         },
         {
             "key": "field_63f637e270cd5",
@@ -119,6 +131,85 @@
                     "delay": 0
                 }
             ]
+        },
+        {
+            "key": "field_643ea1fdd6b89",
+            "label": "Options",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_63f637e27c02f",
+            "label": "Numérotation",
+            "name": "number",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Laissez vide pour ne pas afficher de numérotation.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_63f637e26d28d",
+            "label": "Style",
+            "name": "style",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_643ea27ef196d",
+                    "label": "Arrière-plan",
+                    "name": "background",
+                    "aria-label": "",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "field_64285eb773292"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 1
+                }
+            ]
         }
     ],
     "location": [
@@ -139,5 +230,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1677615651
+    "modified": 1681826917
 }

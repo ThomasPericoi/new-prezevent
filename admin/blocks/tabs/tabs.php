@@ -58,12 +58,15 @@ $style  = implode('; ', $styles);
                 <?php endwhile; ?>
             </nav>
             <div class="content-wrapper">
+                <?php $i = 1; ?>
                 <?php while (have_rows('tab')) : the_row();
                     $image = get_sub_field('image');
                     $video = get_sub_field('video'); ?>
                     <div class="content">
+                        <div class="index"><?php echo $i; ?></div>
                         <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
                     </div>
+                    <?php $i++ ?>
                 <?php endwhile; ?>
             </div>
         </div>

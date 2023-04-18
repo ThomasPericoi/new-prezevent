@@ -1,6 +1,10 @@
 /* #Media
 --------------------------------------------------------------- */
-.media-block {
+.media-block.has-background {
+    padding: 1px 0;
+}
+
+.media-block .container {
     margin: var(--spacing-section-outer) auto;
 }
 
