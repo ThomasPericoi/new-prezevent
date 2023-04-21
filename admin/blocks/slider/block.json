@@ -1,0 +1,15 @@
+{
+    "name": "acf/slider",
+    "title": "Slider",
+    "description": "Slider d'images, avec une légende.",
+    "category": "prezevolve",
+    "icon": "slides",
+    "keywords": [
+        "image",
+        "slider"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "slider.php"
+    }
+}

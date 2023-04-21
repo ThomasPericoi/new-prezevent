@@ -48,6 +48,18 @@ $(document).ready(function () {
       .slideToggle(350);
   });
 
+  // Block - Slider
+  var blockSliderSwiper = new Swiper(".slider-block .swiper", {
+    autoHeight: true,
+    slidesPerView: 1,
+    spaceBetween: 200,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+  });
+
   // Block - Tabs
   $('.tabs nav a').on('click', function () {
     show_content($(this).index());
