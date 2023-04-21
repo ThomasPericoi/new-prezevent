@@ -37,6 +37,12 @@
   justify-content: center;
 }
 
+@media screen and (min-width: 992px) {
+  .single-fonctionnalite .hero .image-wrapper {
+    order: 2;
+  }
+}
+
 .single-fonctionnalite .hero .image-wrapper>* {
   width: 100%;
   max-width: 200px;
@@ -46,12 +52,6 @@
 @media screen and (min-width: 992px) {
   .single-fonctionnalite .hero .image-wrapper>* {
     max-width: 250px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .single-fonctionnalite .hero .image-wrapper {
-    order: 2;
   }
 }
 
