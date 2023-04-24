@@ -52,7 +52,7 @@ $(document).ready(function () {
   var blockSliderSwiper = new Swiper(".slider-block .swiper", {
     autoHeight: true,
     slidesPerView: 1,
-    spaceBetween: 200,
+    spaceBetween: 100,
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',

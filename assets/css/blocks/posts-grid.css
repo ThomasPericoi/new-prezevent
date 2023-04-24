@@ -6,8 +6,28 @@
     text-align: center;
 }
 
+@media screen and (min-width: 992px) {
+    .posts-grid-block.masonry {
+        padding: var(--spacing-section-inner) 0 calc(var(--spacing-section-inner) + 75px) 0;
+    }
+}
+
 .posts-grid-block .introduction {
     margin-bottom: var(--spacing-section-inner);
+}
+
+@media screen and (min-width: 992px) {
+    .posts-grid-block.masonry .post:nth-of-type(3n+2) {
+        top: 175px;
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .posts-grid-block.masonry .post:nth-of-type(3n+3) {
+        top: 75px;
+        position: relative;
+    }
 }
 
 .posts-grid-block .btn {
