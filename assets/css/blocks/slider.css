@@ -19,6 +19,7 @@
 
 .slider-block .swiper img {
     width: 100%;
+    border-radius: var(--normal-radius);
 }
 
 .slider-block .swiper .legend {
@@ -27,6 +28,7 @@
     padding: 1em;
     position: relative;
     color: var(--white);
+    border-radius: var(--normal-radius);
     box-sizing: border-box;
 }
 

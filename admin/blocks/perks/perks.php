@@ -13,8 +13,9 @@
  */
 
 $display = get_field('display');
+$alignement = get_field('alignement');
 
-$classes = 'perks ' . $display;
+$classes = 'perks ' . $display . ' text-' . $alignement;
 if (!empty($block['className'])) {
     $classes .= ' ' . $block['className'];
 }

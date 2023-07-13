@@ -362,7 +362,8 @@
                     "allow_custom": 0,
                     "layout": "vertical",
                     "toggle": 0,
-                    "save_custom": 0
+                    "save_custom": 0,
+                    "custom_choice_button_text": "Ajouter un nouveau choix"
                 }
             ]
         }
@@ -385,5 +386,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1681826478
+    "modified": 1689255398
 }

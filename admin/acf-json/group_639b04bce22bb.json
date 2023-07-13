@@ -146,7 +146,8 @@
             "allow_custom": 0,
             "layout": "vertical",
             "toggle": 0,
-            "save_custom": 0
+            "save_custom": 0,
+            "custom_choice_button_text": "Ajouter un nouveau choix"
         },
         {
             "key": "field_639b4d18357c9",
@@ -359,5 +360,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1674552074
+    "modified": 1689255399
 }

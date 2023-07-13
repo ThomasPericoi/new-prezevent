@@ -33,7 +33,7 @@
                 "class": "",
                 "id": ""
             },
-            "message": "Une sorte de slider, avec des \\\"tabs\\\" textuel en guise de pagination.",
+            "message": "Une sorte de slider, avec des \"tabs\" textuel en guise de pagination.",
             "new_lines": "wpautop",
             "esc_html": 0
         },
@@ -250,5 +250,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1680366950
+    "modified": 1689255399
 }

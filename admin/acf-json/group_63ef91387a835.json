@@ -222,7 +222,8 @@
             "allow_custom": 0,
             "layout": "vertical",
             "toggle": 0,
-            "save_custom": 0
+            "save_custom": 0,
+            "custom_choice_button_text": "Ajouter un nouveau choix"
         },
         {
             "key": "field_63ef9dbe6f417",
@@ -358,7 +359,8 @@
             "allow_custom": 0,
             "layout": "vertical",
             "toggle": 0,
-            "save_custom": 0
+            "save_custom": 0,
+            "custom_choice_button_text": "Ajouter un nouveau choix"
         },
         {
             "key": "field_63ef934cf4050",
@@ -401,5 +403,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1676838384
+    "modified": 1689255399
 }

@@ -22,8 +22,9 @@ $categories = get_field("categories");
 $tags = get_field("tags");
 // Options
 $background = get_field("background_color");
+$grid = get_field("grid_style");
 
-$classes = 'posts-grid-block';
+$classes = 'posts-grid-block ' . $grid;
 if (!empty($block['className'])) {
   $classes .= ' ' . $block['className'];
 }

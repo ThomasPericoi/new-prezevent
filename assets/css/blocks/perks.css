@@ -28,6 +28,18 @@
   gap: 1em;
 }
 
+.perks.text-left .perk {
+  text-align: left;
+}
+
+.perks.text-center .perk {
+  text-align: center;
+}
+
+.perks.text-right .perk {
+  text-align: right;
+}
+
 .perk .title {
   display: block;
   margin-bottom: 0.35em;
@@ -41,6 +53,14 @@
   max-width: 240px;
   margin: 0 auto 2em auto;
   display: block;
+}
+
+.perks.text-left .perk img {
+  margin: 0 auto 2em 0;
+}
+
+.perks.text-right .perk img {
+  margin: 0 0 2em auto;
 }
 
 .perks.list .perk img {
