@@ -17,7 +17,7 @@
                 "id": ""
             },
             "choices": {
-                "none": "Aucun",
+                "unset": "Aucun",
                 "var(--lavender-blush)": "Lavender blush",
                 "var(--link-water)": "Link water",
                 "var(--primary-2)": "Primary",
@@ -27,7 +27,7 @@
                 "var(--white)": "Blanc",
                 "var(--black)": "Noir"
             },
-            "default_value": "none",
+            "default_value": "unset",
             "return_format": "value",
             "multiple": 0,
             "allow_null": 0,
@@ -54,5 +54,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1689339790
+    "modified": 1689340384
 }

@@ -1,0 +1,14 @@
+{
+    "name": "acf/title",
+    "title": "Titre",
+    "description": "Un titre qui peut être h1, h2, h3, .. ou un div.",
+    "category": "prezevolve",
+    "icon": "heading",
+    "keywords": [
+      "title"
+    ],
+    "acf": {
+      "mode": "edit",
+      "renderTemplate": "title.php"
+    }
+  }

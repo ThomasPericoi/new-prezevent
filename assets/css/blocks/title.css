@@ -1,0 +1,70 @@
+/* #Title
+--------------------------------------------------------------- */
+.title-block .container {
+    margin: var(--spacing-section-outer) auto;
+}
+
+.title-block p {
+    font-weight: 400;
+    line-height: 1.25;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Size */
+.title-block.medium p {
+    font-size: 22px;
+}
+
+@media screen and (min-width: 768px) {
+    .title-block.medium p {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .title-block.medium p {
+        font-size: 32px;
+    }
+}
+
+.title-block.large p {
+    font-size: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .title-block.large p {
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .title-block.large p {
+        font-size: 50px;
+    }
+}
+
+/* Alignement */
+.title-block.text-left p {
+    text-align: left;
+}
+
+.title-block.text-center p {
+    text-align: center;
+}
+
+.title-block.text-right p {
+    text-align: right;
+}
+
+/* Color */
+.title-block.primary p {
+    color: var(--primary-1);
+}
+
+.title-block.secondary p {
+    color: var(--primary-4);
+}
+
+.title-block.tertiary p {
+    color: var(--tertiary-2);
+}
