@@ -17,7 +17,8 @@ $link = get_field("link");
 $text = get_field("text");
 $image = get_field("image");
 
-$classes = 'ads';
+$classes = array('ads-block');
+$classes  = implode(' ', $classes);
 if (!empty($block['className'])) {
     $classes .= ' ' . $block['className'];
 }

@@ -23,7 +23,8 @@ $number = get_field("number");
 $has_background = ($block_style["background_color"] == "none") ? "" : "has-background";
 $background = $block_style["background_color"];
 
-$classes = 'content-block ' . $has_background;
+$classes = array('content-block', $has_background);
+$classes  = implode(' ', $classes);
 if (!empty($block['className'])) {
     $classes .= ' ' . $block['className'];
 }

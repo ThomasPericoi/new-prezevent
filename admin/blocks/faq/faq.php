@@ -16,7 +16,8 @@ $title = get_field("title");
 $subtitle = get_field("subtitle");
 $description = get_field("description");
 
-$classes = 'faq-block';
+$classes = array('faq-block');
+$classes  = implode(' ', $classes);
 if (!empty($block['className'])) {
     $classes .= ' ' . $block['className'];
 }

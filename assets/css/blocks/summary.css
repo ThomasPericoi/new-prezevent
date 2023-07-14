@@ -1,18 +1,18 @@
 /* #Summary
 --------------------------------------------------------------- */
-.summary {
+.summary-block {
   padding: 2rem;
   background-color: var(--link-water);
   border-radius: var(--normal-radius);
 }
 
 @media screen and (min-width: 992px) {
-  .summary {
+  .summary-block {
     padding: 3rem;
   }
 }
 
-.summary .title {
+.summary-block .title {
   font-family: var(--bold);
   margin-bottom: 1em;
   text-transform: uppercase;
@@ -20,18 +20,18 @@
   font-weight: 700;
 }
 
-.summary ol {
+.summary-block ol {
   padding-inline-start: 1em;
   list-style: auto;
   color: var(--primary-1);
   font-weight: 700;
 }
 
-.summary ol li {
+.summary-block ol li {
   padding-bottom: 0.5em;
 }
 
-.summary ol a {
+.summary-block ol a {
   color: var(--primary-3);
   font-weight: 400;
   text-decoration: none;

@@ -24,7 +24,8 @@ $tags = get_field("tags");
 $background = get_field("background_color");
 $grid = get_field("grid_style");
 
-$classes = 'posts-grid-block ' . $grid;
+$classes = array('posts-grid-block', $grid);
+$classes  = implode(' ', $classes);
 if (!empty($block['className'])) {
   $classes .= ' ' . $block['className'];
 }

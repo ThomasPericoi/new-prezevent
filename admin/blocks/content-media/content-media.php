@@ -31,7 +31,8 @@ $background = $block_style["background_color"];
 $max_size = $block_style["maximum_size"];
 $shadowed = $block_style["image_shadowed"] ? "shadowed" : "";
 
-$classes = 'content-media ' . $placement . ' ' . $has_background;
+$classes = array('content-media-block', $placement, $has_background);
+$classes  = implode(' ', $classes);
 if (!empty($block['className'])) {
     $classes .= ' ' . $block['className'];
 }

@@ -1,10 +1,10 @@
 /* #Content + Media
 --------------------------------------------------------------- */
-.content-media.has-background {
+.content-media-block.has-background {
   padding: 1px 0;
 }
 
-.content-media .container {
+.content-media-block .container {
   margin: var(--spacing-section-outer) auto;
   display: flex;
   flex-direction: column;
@@ -13,56 +13,56 @@
 }
 
 @media screen and (min-width: 768px) {
-  .content-media .container {
+  .content-media-block .container {
     flex-direction: row;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .content-media.flex-alternate .container {
+  .content-media-block.flex-alternate .container {
     flex-direction: row-reverse;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .content-media .container {
+  .content-media-block .container {
     gap: 6rem;
   }
 }
 
-.content-media .container>div {
+.content-media-block .container>div {
   flex: 1 1 0;
 }
 
 @media screen and (min-width: 768px) {
-  .content-media .container>div {
+  .content-media-block .container>div {
     max-width: 50%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .content-media>.media.video {
+  .content-media-block>.media.video {
     overflow: hidden;
   }
 }
 
-.content-media h2 {
+.content-media-block h2 {
   padding-bottom: var(--spacing-title);
 }
 
-.content-media .media>* {
+.content-media-block .media>* {
   width: 100%;
 }
 
-.content-media .media.shadowed>* {
+.content-media-block .media.shadowed>* {
   box-shadow: 5px 5px 25px -5px rgb(0 0 0 / 15%);
 }
 
-.content-media .media>img {
+.content-media-block .media>img {
   border-radius: var(--normal-radius);
 }
 
-.content-media .media>video {
+.content-media-block .media>video {
   width: 100%;
   clip-path: inset(2px 2px);
 }

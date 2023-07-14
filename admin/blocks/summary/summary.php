@@ -12,7 +12,8 @@
  * @param   array $context The context provided to the block by the post or it's parent block.
  */
 
-$classes = 'summary';
+$classes = array('summary-block');
+$classes  = implode(' ', $classes);
 if (!empty($block['className'])) {
     $classes .= ' ' . $block['className'];
 }

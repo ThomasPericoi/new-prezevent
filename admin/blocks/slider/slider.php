@@ -15,7 +15,8 @@
 $title = get_field("title");
 $subtitle = get_field("subtitle");
 
-$classes = 'slider-block';
+$classes = array('slider-block');
+$classes  = implode(' ', $classes);
 if (!empty($block['className'])) {
     $classes .= ' ' . $block['className'];
 }

@@ -15,7 +15,8 @@
 $content = get_field('content') ?: 'Il faut vraiment que vous portiez votre attention ici !';
 $tab = get_field('tab') ?: 'En bref';
 
-$classes = 'highlighting';
+$classes = array('highlighting-block');
+$classes  = implode(' ', $classes);
 if (!empty($block['className'])) {
     $classes .= ' ' . $block['className'];
 }

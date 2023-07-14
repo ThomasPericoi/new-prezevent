@@ -1,10 +1,10 @@
 /* #Perks
 --------------------------------------------------------------- */
-.perks {
+.perks-block {
   margin: var(--spacing-section-outer) auto;
 }
 
-.perks>.container {
+.perks-block>.container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   justify-items: center;
@@ -12,31 +12,31 @@
 }
 
 @media screen and (min-width: 767px) {
-  .perks>.container {
+  .perks-block>.container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.perks.list>.container {
+.perks-block.list>.container {
   grid-template-columns: repeat(1, 1fr);
 }
 
-.perks.list .perk {
+.perks-block.list .perk {
   max-width: 620px;
   display: flex;
   align-items: center;
   gap: 1em;
 }
 
-.perks.text-left .perk {
+.perks-block.text-left .perk {
   text-align: left;
 }
 
-.perks.text-center .perk {
+.perks-block.text-center .perk {
   text-align: center;
 }
 
-.perks.text-right .perk {
+.perks-block.text-right .perk {
   text-align: right;
 }
 
@@ -55,14 +55,14 @@
   display: block;
 }
 
-.perks.text-left .perk img {
+.perks-block.text-left .perk img {
   margin: 0 auto 2em 0;
 }
 
-.perks.text-right .perk img {
+.perks-block.text-right .perk img {
   margin: 0 0 2em auto;
 }
 
-.perks.list .perk img {
+.perks-block.list .perk img {
   max-width: 125px;
 }

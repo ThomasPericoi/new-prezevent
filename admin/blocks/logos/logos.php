@@ -18,7 +18,8 @@ $subtitle = get_field("subtitle");
 // Options
 $background = get_field("background_color");
 
-$classes = 'logos';
+$classes = array('logos-block');
+$classes  = implode(' ', $classes);
 if (!empty($block['className'])) {
   $classes .= ' ' . $block['className'];
 }

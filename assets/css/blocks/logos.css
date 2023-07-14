@@ -1,11 +1,11 @@
 /* #Logos
 --------------------------------------------------------------- */
-.logos {
+.logos-block {
   padding: var(--spacing-section-inner) 0;
   margin-bottom: var(--spacing-section-outer);
 }
 
-.logos .introduction {
+.logos-block .introduction {
   margin-bottom: var(--spacing-section-inner);
   text-align: center;
 }

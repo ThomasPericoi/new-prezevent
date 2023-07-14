@@ -16,7 +16,8 @@ $title = get_field('title') ?: 'Ils nous adorent !';
 $content = get_field('content') ?: 'Prezevent, c\'est super. Voici pourquoi...';
 $author = get_field('author') ?: '';
 
-$classes = 'testimonials';
+$classes = array('testimonials-block');
+$classes  = implode(' ', $classes);
 if (!empty($block['className'])) {
     $classes .= ' ' . $block['className'];
 }

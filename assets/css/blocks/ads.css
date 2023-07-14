@@ -1,6 +1,6 @@
 /* #Ads
 --------------------------------------------------------------- */
-.ads .content {
+.ads-block .content {
     max-width: 750px;
     margin: 0 auto;
     display: flex;
@@ -13,12 +13,12 @@
 }
 
 @media screen and (min-width: 768px) {
-    .ads .content {
+    .ads-block .content {
         flex-direction: row;
     }
 }
 
-.ads .content span {
+.ads-block .content span {
     padding: 2em;
     display: block;
     color: var(--white);
@@ -27,18 +27,18 @@
 }
 
 @media screen and (min-width: 768px) {
-    .ads .content span {
+    .ads-block .content span {
         padding: 1em;
         text-align: left;
     }
 }
 
-.ads .content img {
+.ads-block .content img {
     width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-    .ads .content img {
+    .ads-block .content img {
         max-width: 40%;
     }
 }

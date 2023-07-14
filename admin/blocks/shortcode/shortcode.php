@@ -14,7 +14,8 @@
 
 $shortcode = get_field("shortcode");
 
-$classes = 'shortcode-block';
+$classes = array('shortcode-block');
+$classes  = implode(' ', $classes);
 if (!empty($block['className'])) {
     $classes .= ' ' . $block['className'];
 }

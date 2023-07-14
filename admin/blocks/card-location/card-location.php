@@ -14,7 +14,8 @@
 
 $informations = get_field('informations');
 
-$classes = 'card-location';
+$classes = array('card-location-block');
+$classes  = implode(' ', $classes);
 if (!empty($block['className'])) {
     $classes .= ' ' . $block['className'];
 }
