@@ -48,7 +48,7 @@ $style  = implode('; ', $styles);
                     $question = get_sub_field('question');
                     $answer = get_sub_field('answer'); ?>
                     <div class="item">
-                        <li class="question">
+                        <li class="question" tabindex="0" role="button">
                             <h3><?php echo $question; ?></h3>
                         </li>
                         <li class="answer"><?php echo $answer; ?></li>

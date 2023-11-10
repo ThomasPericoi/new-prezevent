@@ -3,23 +3,6 @@
     "title": "BLOC - Emphase",
     "fields": [
         {
-            "key": "field_6428589dad4ec",
-            "label": "Informations",
-            "name": "",
-            "aria-label": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
             "key": "field_642858c2ad4ee",
             "label": "Emphase",
             "name": "",
@@ -42,7 +25,7 @@
             "label": "Contenu",
             "name": "",
             "aria-label": "",
-            "type": "tab",
+            "type": "accordion",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -51,7 +34,8 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "top",
+            "open": 0,
+            "multi_expand": 0,
             "endpoint": 0
         },
         {
@@ -113,5 +97,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1689255398
+    "modified": 1699615362
 }

@@ -48,7 +48,7 @@ $style  = implode('; ', $styles);
         <?php while (have_rows('logo')) : the_row();
           $image = get_sub_field('image'); ?>
           <div class="logo">
-            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" tabindex="0">
           </div>
         <?php endwhile; ?>
       </div>

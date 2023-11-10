@@ -50,7 +50,7 @@ $style  = implode('; ', $styles);
                 <?php while (have_rows('tab')) : the_row();
                     $title = get_sub_field('title');
                     $description = get_sub_field('description'); ?>
-                    <a>
+                    <a tabindex="0" role="button">
                         <h3 class="h4-size"><?php echo $title; ?></h3>
                         <?php if ($description) : ?>
                             <div class="description"><?php echo $description; ?></div>

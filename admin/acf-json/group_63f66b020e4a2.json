@@ -3,23 +3,6 @@
     "title": "BLOC - F.A.Q.",
     "fields": [
         {
-            "key": "field_6428592538379",
-            "label": "Informations",
-            "name": "",
-            "aria-label": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
             "key": "field_642859413837c",
             "label": "F.A.Q.",
             "name": "",
@@ -42,7 +25,7 @@
             "label": "Introduction",
             "name": "",
             "aria-label": "",
-            "type": "tab",
+            "type": "accordion",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -51,7 +34,8 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "top",
+            "open": 0,
+            "multi_expand": 0,
             "endpoint": 0
         },
         {
@@ -119,7 +103,7 @@
             "label": "Contenu",
             "name": "",
             "aria-label": "",
-            "type": "tab",
+            "type": "accordion",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -128,7 +112,8 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "top",
+            "open": 0,
+            "multi_expand": 0,
             "endpoint": 0
         },
         {
@@ -216,5 +201,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1689255398
+    "modified": 1699615388
 }

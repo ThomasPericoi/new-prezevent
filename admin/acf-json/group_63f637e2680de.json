@@ -3,23 +3,6 @@
     "title": "BLOC - Contenu",
     "fields": [
         {
-            "key": "field_643ea176d6b86",
-            "label": "Informations",
-            "name": "",
-            "aria-label": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
             "key": "field_643ea18cd6b87",
             "label": "Contenu",
             "name": "",
@@ -42,7 +25,7 @@
             "label": "Contenu",
             "name": "",
             "aria-label": "",
-            "type": "tab",
+            "type": "accordion",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -51,7 +34,8 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "top",
+            "open": 0,
+            "multi_expand": 0,
             "endpoint": 0
         },
         {
@@ -137,7 +121,7 @@
             "label": "Options",
             "name": "",
             "aria-label": "",
-            "type": "tab",
+            "type": "accordion",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -146,7 +130,8 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "top",
+            "open": 0,
+            "multi_expand": 0,
             "endpoint": 0
         },
         {
@@ -230,5 +215,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1689255397
+    "modified": 1699615279
 }

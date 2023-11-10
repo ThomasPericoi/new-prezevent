@@ -3,23 +3,6 @@
     "title": "BLOC – Title",
     "fields": [
         {
-            "key": "field_64b018d258b87",
-            "label": "Informations",
-            "name": "",
-            "aria-label": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
             "key": "field_64b01b63db9ae",
             "label": "Titre",
             "name": "",
@@ -42,7 +25,7 @@
             "label": "Contenu",
             "name": "",
             "aria-label": "",
-            "type": "tab",
+            "type": "accordion",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -51,7 +34,8 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "top",
+            "open": 0,
+            "multi_expand": 0,
             "endpoint": 0
         },
         {
@@ -79,7 +63,7 @@
             "label": "Options",
             "name": "",
             "aria-label": "",
-            "type": "tab",
+            "type": "accordion",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -88,7 +72,8 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "top",
+            "open": 0,
+            "multi_expand": 0,
             "endpoint": 0
         },
         {
@@ -221,5 +206,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1689345204
+    "modified": 1699615641
 }

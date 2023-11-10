@@ -7,7 +7,7 @@
 if (function_exists('acf_add_options_page')) {
     acf_add_options_page(array(
         'page_title'    => __('Thème Prezevent', 'prezevolve'),
-        'menu_title'    => __('Thème Prezevent', 'prezevolve'),
+        'menu_title'    => __('Options du thème', 'prezevolve'),
         'menu_slug'     => 'options',
         'capability'    => 'edit_pages',
         'redirect'      => true,
@@ -99,3 +99,16 @@ function register_block_category($categories, $post)
     );
 }
 add_filter('block_categories_all', 'register_block_category', 10, 2);
+
+/* USER ROLE(S)
+--------------------------------------------------------------- */
+
+// Add and delete roles
+function manage_user_roles()
+{
+    remove_role('subscriber');
+    remove_role('editor');
+    remove_role('contributor');
+    remove_role('author');
+}
+add_action('init', 'manage_user_roles');

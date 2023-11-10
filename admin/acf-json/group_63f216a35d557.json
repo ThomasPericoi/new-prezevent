@@ -3,23 +3,6 @@
     "title": "BLOC - Grille de dossiers",
     "fields": [
         {
-            "key": "field_642859f08d469",
-            "label": "Informations",
-            "name": "",
-            "aria-label": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
             "key": "field_642859fc8d46a",
             "label": "Grille de dossiers",
             "name": "",
@@ -42,7 +25,7 @@
             "label": "Introduction",
             "name": "",
             "aria-label": "",
-            "type": "tab",
+            "type": "accordion",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -51,7 +34,8 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "top",
+            "open": 0,
+            "multi_expand": 0,
             "endpoint": 0
         },
         {
@@ -99,7 +83,7 @@
             "label": "Contenu",
             "name": "",
             "aria-label": "",
-            "type": "tab",
+            "type": "accordion",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -108,7 +92,8 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "top",
+            "open": 0,
+            "multi_expand": 0,
             "endpoint": 0
         },
         {
@@ -154,7 +139,8 @@
             "return_format": "id",
             "field_type": "multi_select",
             "allow_null": 1,
-            "multiple": 0
+            "multiple": 0,
+            "bidirectional_target": []
         },
         {
             "key": "field_63f217c1b0f11",
@@ -186,7 +172,7 @@
             "label": "Options",
             "name": "",
             "aria-label": "",
-            "type": "tab",
+            "type": "accordion",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -195,7 +181,8 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "top",
+            "open": 0,
+            "multi_expand": 0,
             "endpoint": 0
         },
         {
@@ -265,5 +252,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1680369143
+    "modified": 1699615418
 }

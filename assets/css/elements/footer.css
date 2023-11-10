@@ -23,7 +23,8 @@
   transition: color ease 250ms;
 }
 
-#footer .main-footer a:hover {
+#footer .main-footer a:hover,
+#footer .main-footer a:focus {
   color: var(--secondary-2);
 }
 
@@ -150,7 +151,8 @@
   transition: transform ease 250ms;
 }
 
-#footer .main-footer .socials>a:hover {
+#footer .main-footer .socials>a:hover,
+#footer .main-footer .socials>a:focus {
   transform: scale(0.9);
 }
 
